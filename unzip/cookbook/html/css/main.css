@@ -1,0 +1,444 @@
+@charset "utf-8";
+body{ 
+	font-family: 'Open Sans', sans-serif;
+	font-color:#333;
+}
+p{ font-size:1.2em; }
+h1, h2, h3, h4{
+	font-weight:600;
+}
+body .ui-page{ background:none; }
+.home-page.ui-page{
+	background:url("../images/cookbook-page1.jpg");
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;  
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.page.ui-page{	background:#f2f3ef; }
+body .home-page h1.cook-book-logo{ 
+	max-width:300px;
+	max-height:300px;
+	float:left;
+	position:fixed;
+	left:50%; 
+	margin-left:-150px;
+	top:50%; 
+	margin-top:-150px;
+	font-size:0;
+	text-indent:9999;
+}
+.loader{ position:fixed; bottom:60px; }
+.loading {
+  height: 85px;
+  left: 50%;
+  margin-left: -42.5px;
+  margin-top: -42.5px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  width: 85px;
+}
+.loading-circle {
+  -webkit-animation: 2291ms loading infinite;
+  animation: 2291ms loading infinite;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 14px;
+  position: absolute;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  width: 14px;
+}
+.loading-circle:nth-child(1) {
+  -webkit-animation-delay: 42ms;
+  animation-delay: 42ms;
+}
+.loading-circle:nth-child(2) {
+  -webkit-animation-delay: 84ms;
+  animation-delay: 84ms;
+}
+.loading-circle:nth-child(3) {
+  -webkit-animation-delay: 126ms;
+  animation-delay: 126ms;
+}
+.loading-circle:nth-child(4) {
+  -webkit-animation-delay: 168ms;
+  animation-delay: 168ms;
+}
+.loading-circle:nth-child(5) {
+  -webkit-animation-delay: 210ms;
+  animation-delay: 210ms;
+}
+.loading-circle:nth-child(6) {
+  -webkit-animation-delay: 252ms;
+  animation-delay: 252ms;
+}
+.loading-circle:nth-child(7) {
+  -webkit-animation-delay: 294ms;
+  animation-delay: 294ms;
+}
+.loading-circle:nth-child(8) {
+  -webkit-animation-delay: 336ms;
+  animation-delay: 336ms;
+}
+.loading-circle:nth-child(9) {
+  -webkit-animation-delay: 378ms;
+  animation-delay: 378ms;
+}
+.loading-circle:nth-child(10) {
+  -webkit-animation-delay: 420ms;
+  animation-delay: 420ms;
+}
+.loading-circle:nth-child(11) {
+  -webkit-animation-delay: 462ms;
+  animation-delay: 462ms;
+}
+.loading-circle:nth-child(12) {
+  -webkit-animation-delay: 504ms;
+  animation-delay: 504ms;
+}
+.loading-circle:nth-child(13) {
+  -webkit-animation-delay: 546ms;
+  animation-delay: 546ms;
+}
+.loading-row1 {
+  top: 1.3px;
+}
+.loading-row2 {
+  top: 18.95px;
+}
+.loading-row3 {
+  top: 36.55px;
+}
+.loading-row4 {
+  top: 54.2px;
+}
+.loading-row5 {
+  top: 71.85px;
+}
+.loading-col1 {
+  left: 1.25px;
+}
+.loading-col2 {
+  left: 18.85px;
+}
+.loading-col3 {
+  left: 36.5px;
+}
+.loading-col4 {
+  left: 54.15px;
+}
+.loading-col5 {
+  left: 71.8px;
+}
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  27.28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  36.36% {
+    -webkit-transform: scale(0.857);
+    transform: scale(0.857);
+  }
+  54.55% {
+    -webkit-transform: scale(0.857);
+    transform: scale(0.857);
+  }
+  63.64% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  27.28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  36.36% {
+    -webkit-transform: scale(0.857);
+    transform: scale(0.857);
+  }
+  54.55% {
+    -webkit-transform: scale(0.857);
+    transform: scale(0.857);
+  }
+  63.64% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+.header-menu{ height:100px; position:fixed; top:0; z-index:9; background:#f2f3ef; }
+.logo { position:relative; width:100%; }
+.logo a { position:absolute; left:50%; top:50%; margin-left:-40px; margin-top:10px; }
+a.menu-icon, a.search-icon{
+	top:20px;
+	height:60px;
+	width:60px;
+	background:url(../images/menu-icon.png) no-repeat center center;
+	float:left;
+	font-size:0;
+	text-indent:9999;
+	padding:0;
+	margin:0;
+	text-shadow:none;
+	border:0;
+}
+a.menu-icon.active, a.menu-icon:hover{
+	background:#e33d26 url(../images/menu-icon-hover.png) no-repeat center center;
+}
+a.search-icon{background:url(../images/search-icon.png) no-repeat center center;}
+a.search-icon.active, a.search-icon:hover{background:#e33d26 url(../images/search-icon-hover.png) no-repeat center center;}
+.page1-menu:first-child{ margin-bottom:51px; }
+.page1-menu li span.icon{
+	width:30px;
+	background:url(../images/icons-sprite.png) no-repeat ;
+	float:left;
+	font-size:0;
+	text-indent:9999;
+	margin:0 10px 0 3px;
+}
+.page1-menu li.top-rated-recipies span.icon{
+	background-position:-19px -40px;
+	}
+.page1-menu li.favour-recipies span.icon{
+	background-position:-20px 2px;
+}
+.page1-menu li.shopping-list span.icon{
+	background-position:-20px -83px;
+} 
+.page1-menu li.your-recipies span.icon{
+	background-position:-20px -122px;
+}
+.page1-menu li.all-recipies span.icon{
+	background-position:-20px -163px;
+}
+.grid-wrap .grid {
+	list-style:none;
+	margin-top:10px;
+}
+.grid-wrap .grid li{
+	list-style:none;
+	margin-bottom:20px;
+}
+
+.grid li div.desc,
+.content-intro{ width:100%; position:relative; z-index:1; }
+.grid li div.desc .details,
+.content-intro .content-intro-title{ 
+	position:absolute; 
+	bottom:5px; 
+	width:100%;
+	z-index:1; 
+	padding-top:10px;
+	background-color: rgba(54, 54, 54, 0.75);
+	color: #FFFFFF; 
+}
+
+.howSpicy span, .content-review-stars span{ 
+	height:40px;
+	float:right;
+	border:0;
+	font-size:0;
+	text-indent:9999;
+	margin-bottom:10px;
+}
+.content-review-stars span{ 
+	float:left; 
+	width:30px;
+	height:30px;
+	background:url(../images/icons-sprite-333.png) no-repeat;
+	background-position:-15px -405px;
+}
+.content-review-stars span.empty{
+	background-position:-15px -459px;
+}
+.howSpicy span.five-chillies{
+	width:77px;
+	background:url(../images/red_chili_5.png) no-repeat left center;
+}
+.howSpicy span.four-chillies{
+	width:64px;
+	background:url(../images/red_chili_4.png) no-repeat left center;
+}
+.howSpicy span.three-chillies{
+	width:51px;
+	background:url(../images/red_chili_3.png) no-repeat left center;
+}
+.howSpicy span.two-chillies{
+	width:38px;
+	background:url(../images/red_chili_2.png) no-repeat left center;
+}
+.howSpicy span.one-chillies{
+	width:25px;
+	background:url(../images/red_chili.png) no-repeat left center;
+}
+.isFav button.button-favorite{ 
+	float:left; 
+	height:40px;
+	width:40px;
+	background:url(../images/icons-sprite.png) no-repeat ;
+	float:left;
+	border:0;
+	font-size:0;
+	text-indent:9999;
+	background-position:-15px -204px;
+}
+.isFav button.button-favorite.selected{
+	background-position:-15px -270px;
+}
+.content-favorite .isFav button.button-favorite{ 
+	float:left;
+	border:0;
+	font-size:1em;
+	color:#333;
+	font-size: 1.2em;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 0 0 35px;
+    text-shadow: none;
+	box-shadow:none;
+	text-align:left;
+	width:100%;
+	margin:0;
+	background:url(../images/icons-sprite-333.png) no-repeat;
+	background-position:-15px -204px;
+}
+.content-favorite .isFav button.button-favorite.selected{
+	background-position:-15px -270px;
+}
+.content-user-images .userImages button.button-images{ 
+	float:left;
+	border:0;
+	font-size:1em;
+	color:#333;
+	font-size: 1.2em;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 0 0 35px;
+    text-shadow: none;
+	box-shadow:none;
+	text-align:left;
+	width:100%;
+	margin:0;
+	background:url(../images/icons-sprite-333.png) no-repeat;
+	background-position:-15px -508px;
+}
+
+
+.cookingTime { 
+	float:right; 
+	text-align:right; 
+	height: 38px; 
+	line-height:40px;
+	padding-right:45px; 
+	text-shadow:none;  
+	background:url(../images/icons-sprite.png) no-repeat;
+	background-position:right -344px;
+	font-size:1.2em;
+}
+.content-cookingTime .cookingTime { 
+	float:left; 
+	text-align:left; 
+	background:url(../images/icons-sprite-333.png) no-repeat;
+	background-position:right -343px
+}
+.grid{ margin-top:100px!important; }
+.grid li div.desc .details a, .grid li div.desc .details a h3{ font-weight:none; margin-bottom:0.25em; color:#fff; text-shadow:none; text-decoration:none; font-size:1.25em; margin-top:0; }
+.content-intro { margin-top:80px!important; }
+.content-intro .content-intro-title h1{ font-size:3em; font-weight:none; margin-bottom:0.25em; color:#fff; text-shadow:none; text-decoration:none;  margin-top:0; }
+.grid li img{ width:100%; }
+.ui-content{ padding:10px 0 0 0; }
+.content-intro, .content-intro-author{ padding-top:1em; }
+.content-intro p, .content-intro-author p{ padding-bottom:1em; }
+.content-intro-author p span.author-name{ font-weight:600; padding-right:10px; border-right:1px solid #333; margin-right:10px; }
+
+.ui-listview .ui-btn-icon-right .ui-li-count{ 
+	border-radius:15px; 
+	-moz-border-radius:15px;
+	width:30px;
+	height:30px; 
+	text-align:center;
+	line-height:30px;
+	color:#fff; 
+	background:#e33d26!important;
+	height: 30px;
+	line-height: 30px;
+	margin-top: -16px;
+	padding: 0;
+	border:0;
+}
+.advanced-filters-div{ display:none; }
+.advanced-filters-div.show{ display:block; }
+
+
+input.ui-slider-input {
+  display: none;
+}
+.ui-slider-track{ margin-left:10px; margin-right:10px; }
+.ui-slider .ui-bar-inherit{ background-color:#e33d26!important; }
+.advanced-filters-div h1 { font-size:1.2em; }
+.advanced-filters-div h1 span{
+	height:40px;
+	float:left;
+	line-height:40px;
+}
+.advanced-filters-div h1 span.indicator-span { margin-left:10px; font-size:0.9em; font-weight:normal; color:#e33d26; }
+.padding-bottom-10{ padding-bottom:10px; }
+
+.advanced-filters-div .howSpicy{
+	height:40px;
+	float:left;
+	border:0;
+	font-size:0;
+	text-indent:9999;
+	margin-bottom:10px;
+	
+}
+.advanced-filters-div span.five-chillies{
+	width:77px;
+	background:url(../images/red_chili_333_5.png) no-repeat left center;
+	font-size:0!important;
+}
+.advanced-filters-div span.four-chillies{
+	width:64px;
+	background:url(../images/red_chili_333_4.png) no-repeat left center;
+	font-size:0!important;
+}
+.advanced-filters-div span.three-chillies{
+	width:51px;
+	background:url(../images/red_chili_333_3.png) no-repeat left center;
+	font-size:0!important;
+}
+.advanced-filters-div span.two-chillies{
+	width:38px;
+	background:url(../images/red_chili_333_2.png) no-repeat left center;
+	font-size:0!important;
+}
+.advanced-filters-div span.one-chillies{
+	width:25px;
+	background:url(../images/red_chili_333.png) no-repeat left center;
+	font-size:0!important;
+}
+
+.search-panel{ position:absolute; z-index:10; top:0; height:100%; left:0; background:#f2f3ef;   }

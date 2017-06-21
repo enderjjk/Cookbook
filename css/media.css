@@ -1,0 +1,25 @@
+/* Landscape phones and down */
+@media (max-width: 767px) { 
+	.login-top{ 
+		background-position: center center;
+	    float: right;
+	    font-size: 0 !important;
+	    height: 40px;
+	    margin-top: 1px;
+	    padding-bottom: 0;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-top: 0;
+	    width: 38px;
+	}
+	.login-top:hover{
+		background-position:center center;}
+	.search-top{ 
+		font-size:0!important;
+		padding:0;
+		width:38px;
+		height:38px;
+		background-position:center center;
+		float:right;
+	}
+}
