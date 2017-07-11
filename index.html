@@ -39,30 +39,34 @@
 	
 </head> 
 <body>
-	<div class="grid-100 mobile-grid-100 grid-parent header">
-		<div class="grid-40 mobile-grid-35 top-left">
-        	<ul class="grid-100 mobile-grid-100 grid-parent hide-on-mobile">
-            	<li><a href="index.html">ITEM</a></li>
-                <li><a href="index.html">ITEM</a></li>
-                <li><a href="index.html">ITEM</a></li>
-                <li><a href="index.html">ITEM</a></li>
-            </ul>
-            <button id="mobile-menu" class="mobile-menu hide-on-desktop">&nbsp;</button>
-        </div>
-        <div class="grid-20 mobile-grid-30 logo">
-			<h1><a href="#" title="Cook Book">Cook Book</a></h1>
-        </div>
-        <div class="grid-40 mobile-grid-35 top-right">
-        	<ul class="grid-100 mobile-grid-100 grid-parent">
-	            <li><button id="login" class="login-top">LOG IN</button></li>
-            	<li>
-                	<button id="search-top" class="search-top">
-	                <span>&nbsp;</span><h6>SEARCH FOR RECIPE</h6>
-    	            </button>    
-                </li>            
-            </ul>
-        </div>
-    </div>
+	<header>
+		<div class="grid-100 mobile-grid-100 grid-parent header hide-on-mobile">
+			<div class="grid-15 mobile-grid-30 logo">
+				<h1><a href="#" title="Cook Book">Cook Book</a></h1>
+			</div>
+			<div class="grid-45 top-search-area">
+				<input class="grid-100" placeholder="What would you like to cook?" value="" data-reactid="" type="search">
+			</div>
+			<nav class="grid-40">
+				<ul class="grid-100 grid-parent">
+					<li><a href="index.html">What to Cook</a></li>
+					<li><a href="index.html">Cooking Guides</a></li>
+					<li><button id="login" class="login-top">LOG IN <i class="fa fa-user-o" aria-hidden="true"></i></button></li>          
+				</ul>
+			</nav>
+		</div>
+		<div class="mobile-grid-100 grid-parent header hide-on-desktop">
+			<div class="mobile-grid-35 top-left">
+				<button id="mobile-menu" class="mobile-icon hide-on-desktop"><i class="fa fa-bars" aria-hidden="true"></i></button>
+			</div>
+			<div class="mobile-grid-30 logo">
+				<h1><a href="#" title="Cook Book">Cook Book</a></h1>
+			</div>
+			<div class="mobile-grid-35 top-right">
+				<button id="login" class="mobile-icon login-top-mobile"><i class="fa fa-user-o" aria-hidden="true"></i></button>
+			</div>
+		</div>
+    </header>
     <ul class="mobile-grid-100 grid-parent mobile-menu-area hide-on-desktop" id="mobile-menu-area">
     	<li class="mobile-grid-100"><a href="index.html">ITEM</a></li>
         <li class="mobile-grid-100"><a href="index.html">ITEM</a></li>
@@ -244,7 +248,7 @@
                         <div class="grid-100 mobile-grid-100">
 		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
 		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="#">
+				                <a href="user.html">
 			                    	<span class="grid-30 mobile-grid-30">
 			                			<img src="images/person.jpg">
 			                        </span>
@@ -258,17 +262,17 @@
            	</ul>
         </div>
     </div>
-    <div class="grid-100 mobile-grid-100 footer-content">
-    	<div class="grid-grid-container">
+    <footer class="grid-100 mobile-grid-100">
+    	<div class="grid-container">
         	<ul class="grid-50 mobile-grid-100">
             	<li>Ipsum lorem</li>
                 <li>Ipsum lorem</li>
                 <li>Ipsum lorem</li>
 			</ul>
-            <ul class="grid-10 push-40 mobile-grid-100">
+            <ul class="grid-20 push-30 mobile-grid-100">
             	<li>2015 &copy; Cook Book</li>
 			</ul>
 		</div>
-    </div>
+    </footer>
 </body>
 </html>

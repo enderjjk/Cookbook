@@ -58,6 +58,7 @@ p{
 	padding-bottom:1.4em;
 	color:#7b7b7b;
 }
+a{ text-decoration:none;} 
 .clear{ clear:both; }
 h1, h2, h3, h4{
 	font-family:"Arno Pro";
@@ -70,111 +71,101 @@ h1{ font-size:4em; padding-bottom:0.25em; padding-top:0.5em;  }
 button{
 	border:0;
 }
-.header{
-	height:100px;
-	background:#484848;
-}
-.logo {
-	& h1 { 
-		padding:0;
-		margin:10px 0;
-		height:80px; 
-		width:100%; 
-		float:left; 
-		background:url("../images/cookbook.png") no-repeat center center;
-		background-size:contain; 
-		& a{ 
-			font-size:0;  
-			height:100%; 
-			width:100%; 
-			float:left; 
-			
+header {
+	& .header{
+		height:70px;
+		background:#484848;
+		& .logo {
+			& h1 { 
+				padding:0;
+				margin:10px 0;
+				height:50px; 
+				width:100%; 
+				float:left; 
+				background:url("../images/cookbook.png") no-repeat center center;
+				background-size:contain; 
+				& a{ 
+					font-size:0;  
+					height:100%; 
+					width:100%; 
+					float:left; 
+					
+				}
+			}
 		}
-	}
-}
-.top-left, .top-right{
-	height:40px; 
-	margin:30px 0;
-	& li{ 
-		float:left;  
-	}
-}
-.top-right {
-	& li { 
-		float:right; 
-	}
-}
-.top-left {
-	& li{ 
-		margin-left:10px;
-		& a{
-			text-transform:uppercase;
-			line-height:40px;
-			font-size:1.25em;
-			font-weight:600;
-			float:left;
-			width:100%;
-			height:100%;
+		& nav{
+			font-family:@font-family-headers-bold;
+			height:70px; 
+			& li{ 
+				float:left; 
+				margin-left:10px;	
+				& a{
+					height:65px;
+					border-bottom:5px solid #484848;
+					float:left;
+					line-height:65px;
+					text-transform:uppercase;
+					font-size:1.25em;
+					color:#f7f7f7;
+					padding:0;
+					text-decoration:none;
+					&:hover{ 
+						color:#ffffff; 
+						border-bottom:5px solid #ffffff;
+					}
+				}
+				& button{
+					margin:15px 0;
+				}
+			}
+		}
+		& .mobile-icon{
+			background:#484848;
+			margin:0;
 			color:#f7f7f7;
-			padding:0;
-			text-decoration:none;
-			&:hover{ text-decoration:underline; }
+			float:left;
+			width:42px;
+			height:42px;
+			border:1px solid #f7f7f7;
+			z-index:9;
+			float:left;
+			cursor:pointer;
+			&.login-top-mobile{
+				float:right;
+			}
 		}
 	}
 }
-.search-top{
-	text-transform:uppercase;
-	line-height:40px;
+button{
+	font-family:@font-family-headers-bold;
+	float:left;
+	border:1px solid #f7f7f7;
 	background:none;
-	& span{
-		background:url("../images/search-icon.png") no-repeat center center;
-		color:#f7f7f7;
-		text-indent:-9999;
-		float:left;
-		width:38px;
-		height:38px;
-		border:1px solid #f7f7f7;
-	}
-	&:hover {
-		& span{
-			background:#e33d26 url("../images/search-icon.png") no-repeat center center;
-			border:1px solid #e33d26;
-		}
-	}
-	& h6{
-		font-family:"Arial",Helvetica,Arial,Verdana,sans-serif;
-		color:#f7f7f7;
-		font-weight:600;
-		float:left;
-		margin-left:10px;
-	}
-}
-.mobile-menu{
-	background:#484848 url("../images/menu-icon.png") no-repeat center center;
 	color:#f7f7f7;
-	text-indent:-9999;
-	float:left;
-	width:38px;
-	height:38px;
-	border:1px solid #f7f7f7;
-	z-index:9;
-	float:left;
-	cursor:pointer;
-}
-.login-top{
-	padding:0 15px 0 35px;
-	border:1px solid #f7f7f7;
-	color:#f7f7f7;
-	background: url("../images/user-icon.png") no-repeat 5px center;
 	font-size:1.25em;
-	font-weight:600;
-	line-height:40px;
+	height:38px;
 	margin-left:10px;
+	padding:0 15px; 
 	cursor:pointer;
 	&:hover{
-		background:#e2331b url("../images/user-icon.png") no-repeat 5px center;
+		background:#e2331b;
 		border:1px solid #e2331b;
 		color:#fff;
+	}
+}
+.top-search-area{
+	& input{ 
+		font-family:@font-family-headers-bold;
+		font-size:1.25em;
+		height:40px;
+		line-height:40px;
+		border:0;
+		margin:15px 0;
+		color:#333;
+		background:#f3f3f3;
+		&:focus{
+			background:#fff;
+		}
 	}
 }
 .search-area{
@@ -188,33 +179,35 @@ button{
     transition-duration: 0.4s, 0.4s;
     transition-property: transform, opacity;
     transition-timing-function: ease, ease;
-    z-index: 250;
+    z-index: -1;
 	&.open{
 		opacity: 1;
 		overflow-x: visible;
 		overflow-y: visible;
 		transform: translate(0px, 0px);
+		z-index:1;
 	}
-}
-.search-area-inner{ 
-	margin-top:60px;
-	& input{ 
-		height:40px;
-	}
-	& button{
-		padding:0;
-		border:1px solid #e2331b;
-		background:#e2331b;
-		color:#f7f7f7;
-		font-size:1.6em;
-		font-weight:400;
-		line-height:38px;
-		cursor:pointer;
-		&:hover{
-			background:#cf2912;
+	.search-area-inner{ 
+		margin-top:60px;
+		& input{ 
+			height:40px;
+		}
+		& button{
+			padding:0;
+			border:1px solid #e2331b;
+			background:#e2331b;
+			color:#f7f7f7;
+			font-size:1.6em;
+			font-weight:400;
+			line-height:38px;
+			cursor:pointer;
+			&:hover{
+				background:#cf2912;
+			}
 		}
 	}
 }
+
 .search-area-extra h6, .search-area-extra ul{ float:left;  font-size: 1.25em; font-weight: 300; padding:10px 0;  }
 .search-area-extra h6 {color: #999; }
 .search-area-extra ul > li{ float:left; border-left:1px solid #4d4d4d; padding:0 5px;}
@@ -237,7 +230,7 @@ button{
 		left:90px;
 		position: absolute;
 		width:280px;
-		height:270px;
+		height:300px;
 		padding:25px 20px;
 		background:#f7f7f7;
 		& .label{
@@ -267,7 +260,6 @@ button{
 			text-align:center;
 			font-size:1.4em;
 			line-height:1.4em;
-			padding-bottom:0;
 		}
 	}
 }
@@ -282,14 +274,19 @@ button{
 	& h5{ 
 		text-transform:uppercase;
 		font-size:1.4em;
-		line-height:40px;
-		font-family:"Arial",Helvetica,Arial,Verdana,sans-serif;
+		line-height:60px;
 		color:#484848;
 		font-weight:600;
 		text-decoration:none;
+		font-family:@font-family-headers-medium;
 	}
-	&:hover { 
-		& h5{ text-decoration:underline; }
+	& a{
+		&:hover{ 
+			& img {
+				opacity:0.75;
+			}
+			& h5{ text-decoration:underline;}
+		}
 	}
 }
 .mobile-menu-area{
@@ -302,12 +299,13 @@ button{
     transition-duration: 0.4s, 0.4s;
     transition-property: transform, opacity;
     transition-timing-function: ease, ease;
-    z-index: 250;
+    z-index: -1;
 	&.open{
 		opacity: 1;
 		overflow-x: visible;
 		overflow-y: visible;
 		transform: translate(0px, 0px);
+		z-index:1;
 	}
 	& li{ 
 		text-align:center; 
@@ -333,6 +331,7 @@ ul{
 						-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.25);
 						-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.25);
 						box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.25);
+						a{ text-decoration:underline; }
 					}
 					& img.cover{ width:100%; background-size:contain; float:left; }
 					& h2{
@@ -342,16 +341,30 @@ ul{
 						line-height:1.25em;
 						padding-bottom:0.75em; padding-top:0.75em;
 					}
-					& .user-area{ padding-bottom:20px; }
+					& .user-area{ 
+						& h5{ 
+							font-family:@font-family-headers-medium;
+						}
+						padding-bottom:20px;
+						& a{
+							&:hover{ 
+								& img {
+									opacity:0.75;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
 	}
 }
-.footer-content{ 
+footer{
 	padding:20px 10px; 
+	color:#fff;
 	margin: 10px 0 0 0; 
-	border-top:5px solid #484848; 
+	background-color:#484848;
+	border-top:5px solid #000; 
 	& ul{ 
 		float:left; 
 		& li{ 
@@ -386,13 +399,18 @@ ul{
 			float:left;
 			border-right:1px solid #888;
 		}
-		& a{ float:right; }
-		& img{ 
-			float:right; 
-			width:60px; 
-			height:60px; 
-			border-radius:30px;
-			-moz-border-radius:30px;
+		& .user-img{
+			position:relative;
+			height:60px;
+			& img{ 
+				position:absolute;
+				left:50%;
+				margin-left:-30px;
+				width:60px; 
+				height:60px; 
+				border-radius:30px;
+				-moz-border-radius:30px;
+			}
 		}
 	}
 	& .recipe-area-intro{ 
@@ -409,8 +427,8 @@ ul{
 
 .cook-time, .prep-time, .spicyness{
 	width:60px;
-	height:60px;
-	padding:0;
+	height:50px;
+	padding:5px 0;
 	border-radius:30px;
 	-moz-border-radius:30px;
 	background:#e2331b;
@@ -419,16 +437,14 @@ ul{
 	font-weight:400;
 	margin-right:10px;
 	& h3{ 
-		line-height:40px;
-		font-size:1.8em;
+		font-size:2.5em;
 		text-align:center;
 		font-style:italic;
 		padding:0;
 		margin:0;
 	}
 	& h4{ 
-		line-height:10px;
-		font-size:1.4em;
+		font-size:1.5em;
 		text-align:center;
 		font-style:none;
 		padding:0;
@@ -436,11 +452,16 @@ ul{
 	}
 }
 
-.tags-and-comments{ margin:10px 0; padding-top:10px; padding-bottom:10px; border-top:3px solid #484848; border-bottom:3px solid #484848; }
+.tags-and-comments{ 
+	margin:10px 0; 
+	padding-top:10px; 
+	padding-bottom:10px; 
+	border-top:3px solid #484848; 
+	border-bottom:3px solid #484848;
+}
 ul{
 	&.tags{ 
 		float:left; 
-		font-family:"Arno Pro"; 
 		& li {
 			& span{ 
 				font-weight:300; 
