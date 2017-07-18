@@ -39,20 +39,18 @@
 	
 </head> 
 <body>
-	<header>
-		<div class="grid-100 mobile-grid-100 grid-parent header hide-on-mobile">
-			<div class="grid-15 mobile-grid-30 logo">
-				<h1><a href="#" title="Cook Book">Cook Book</a></h1>
+	<header class="grid-100 mobile-grid-100 grid-parent header">
+		<section class="grid-100 mobile-grid-100 grid-parent section--header hide-on-mobile">
+			<div class="grid-15 mobile-grid-30 section--header--logo">
+				<h1><a href="#" title="Cook Book" class="section--header--logo__link">Cook Book</a></h1>
 			</div>
-			<div class="grid-45 top-search-area margin-15-0">
+			<div class="grid-45 section--header--search">
 				<input class="grid-100" placeholder="What would you like to cook?" value="" data-reactid="" type="search">
 			</div>
-			<nav class="grid-40">
-				<ul class="grid-100 grid-parent">
-					<li><a href="index.html">What to Cook</a></li>
-					<li><a href="index.html">Cooking Guides</a></li>
-					<li><button id="login" class="login-top">LOG IN <i class="fa fa-user-o" aria-hidden="true"></i></button></li>          
-				</ul>
+			<nav class="grid-40 section--header--navigation">
+				<a href="index.html" class="section--header--navigation__links">What to Cook</a>
+				<a href="index.html" class="section--header--navigation__links">Cooking Guides</a>
+				<button id="login"  class="section--header--navigation__links login-top">LOG IN <i class="fa fa-user-o" aria-hidden="true"></i></button>
 			</nav>
 		</div>
 		<div class="mobile-grid-100 grid-parent header hide-on-desktop">
@@ -117,18 +115,18 @@
             </div>
         </div>
     </div>
-    <section class="grid-100 mobile-grid-100 grid-parent recipe-of-a-day" id="recipe-of-a-day">
-    	<div class="grid-100 mobile-grid-100 grid-parent image">
-			<div class="grid-100 mobile-grid-100 grid-parent details">
-        		<div class="label">RECIPE OF A DAY</div>
-                <h3>Ipsum lorem with ipsum lorem</h3>
+    <section class="grid-100 mobile-grid-100 grid-parent section--main--image" id="recipe-of-a-day">
+    	<div class="grid-100 mobile-grid-100 grid-parent section--main--image__image">
+			<div class="grid-100 mobile-grid-100 grid-parent section--main--image--details-block">
+        		<div class="details-block__label">RECIPE OF A DAY</div>
+                <h3><a href="#">Ipsum lorem with ipsum lorem</a></h3>
                 <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli. Neque porro quisquam est qui dolorem ipsum quia.</p>
-                <div class="grid-100 mobile-grid-100 grid-parent user-area">
+                <div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
 	                <a href="user.html">
                     	<span class="grid-30 mobile-grid-30">
-                			<img src="images/person.jpg">
+                			<img src="images/person.jpg" class="details--block__image">
                         </span>
-                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
+                        <h5 class="grid-70 mobile-grid-70 details--block__name">USER NAME</h5>
                     </a>
                 </div>
         	</div>
@@ -137,152 +135,248 @@
     <section class="grid-container">
     	<div class="grid-100 mobile-grid-100 grid-parent main-content">
         	<h2 class="grid-100 mobile-grid-100">Latest Recipes</h2>
-        	<ul class="grid-100 mobile-grid-100 grid-parent items-list">
-            	<li class="grid-25 mobile-grid-100 item">
-                	<div class="grid-100 mobile-grid-100 grid-parent item-details">
-					<a href="article.html">
-	                	<img class="gird-100 mobile-grid-100 grid-parent cover" src="images/background-small.jpg">
+        	<div class="grid-100 mobile-grid-100 grid-parent items--list">
+                <div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
                         <div class="grid-100 mobile-grid-100">
-		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
-		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="user.html">
-			                    	<span class="grid-30 mobile-grid-30">
-			                			<img src="images/person.jpg">
-			                        </span>
-			                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
-			                    </a>
-			                </div>
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
                     	</div>
-					</a>
                 	</div>
-                </li>
-                <li class="grid-25 mobile-grid-100 item">
-                	<div class="grid-100 mobile-grid-100 grid-parent item-details">
-					<a href="article.html">
-	                	<img class="gird-100 mobile-grid-100 grid-parent cover" src="images/background-small.jpg">
+                </div>
+                <div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
                         <div class="grid-100 mobile-grid-100">
-		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
-		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="user.html">
-			                    	<span class="grid-30 mobile-grid-30">
-			                			<img src="images/person.jpg">
-			                        </span>
-			                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
-			                    </a>
-			                </div>
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
                     	</div>
-					</a>
                 	</div>
-                </li>
-                <li class="grid-25 mobile-grid-100 item">
-                	<div class="grid-100 mobile-grid-100 grid-parent item-details">
-					<a href="article.html">
-	                	<img class="gird-100 mobile-grid-100 grid-parent cover" src="images/background-small.jpg">
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
                         <div class="grid-100 mobile-grid-100">
-		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
-		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="user.html">
-			                    	<span class="grid-30 mobile-grid-30">
-			                			<img src="images/person.jpg">
-			                        </span>
-			                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
-			                    </a>
-			                </div>
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
                     	</div>
-					</a>
                 	</div>
-                </li>
-                <li class="grid-25 mobile-grid-100 item">
-                	<div class="grid-100 mobile-grid-100 grid-parent item-details">
-					<a href="article.html">
-	                	<img class="gird-100 mobile-grid-100 grid-parent cover" src="images/background-small.jpg">
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
                         <div class="grid-100 mobile-grid-100">
-		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
-		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="user.html">
-			                    	<span class="grid-30 mobile-grid-30">
-			                			<img src="images/person.jpg">
-			                        </span>
-			                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
-			                    </a>
-			                </div>
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
                     	</div>
-					</a>
                 	</div>
-                </li>
-                <li class="grid-25 mobile-grid-100 item">
-                	<div class="grid-100 mobile-grid-100 grid-parent item-details">
-					<a href="article.html">
-	                	<img class="gird-100 mobile-grid-100 grid-parent cover" src="images/background-small.jpg">
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
                         <div class="grid-100 mobile-grid-100">
-		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
-		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="user.html">
-			                    	<span class="grid-30 mobile-grid-30">
-			                			<img src="images/person.jpg">
-			                        </span>
-			                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
-			                    </a>
-			                </div>
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
                     	</div>
-					</a>
                 	</div>
-                </li>
-                <li class="grid-25 mobile-grid-100 item">
-                	<div class="grid-100 mobile-grid-100 grid-parent item-details">
-					<a href="article.html">
-	                	<img class="gird-100 mobile-grid-100 grid-parent cover" src="images/background-small.jpg">
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
                         <div class="grid-100 mobile-grid-100">
-		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
-		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="user.html">
-			                    	<span class="grid-30 mobile-grid-30">
-			                			<img src="images/person.jpg">
-			                        </span>
-			                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
-			                    </a>
-			                </div>
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
                     	</div>
-					</a>
                 	</div>
-                </li>
-                <li class="grid-25 mobile-grid-100 item">
-                	<div class="grid-100 mobile-grid-100 grid-parent item-details">
-					<a href="article.html">
-	                	<img class="gird-100 mobile-grid-100 grid-parent cover" src="images/background-small.jpg">
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
                         <div class="grid-100 mobile-grid-100">
-		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
-		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="user.html">
-			                    	<span class="grid-30 mobile-grid-30">
-			                			<img src="images/person.jpg">
-			                        </span>
-			                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
-			                    </a>
-			                </div>
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
                     	</div>
-					</a>
                 	</div>
-                </li>
-                <li class="grid-25 mobile-grid-100 item">
-                	<div class="grid-100 mobile-grid-100 grid-parent item-details">
-					<a href="article.html">
-	                	<img class="gird-100 mobile-grid-100 grid-parent cover" src="images/background-small.jpg">
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
                         <div class="grid-100 mobile-grid-100">
-		                    <h2>Ipsum lorem ispum lorem lorem ipsum</h2>
-		                    <div class="grid-100 mobile-grid-100 grid-parent user-area">
-				                <a href="user.html">
-			                    	<span class="grid-30 mobile-grid-30">
-			                			<img src="images/person.jpg">
-			                        </span>
-			                        <h5 class="grid-70 mobile-grid-70">USER NAME</h5>
-			                    </a>
-			                </div>
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
                     	</div>
-					</a>
                 	</div>
-                </li>
-           	</ul>
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
+                        <div class="grid-100 mobile-grid-100">
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
+                    	</div>
+                	</div>
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
+                        <div class="grid-100 mobile-grid-100">
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
+                    	</div>
+                	</div>
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
+                        <div class="grid-100 mobile-grid-100">
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
+                    	</div>
+                	</div>
+                </div>
+				<div class="grid-25 mobile-grid-100 items--list__item">
+                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+						<a href="article.html">
+							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+						</a>
+                        <div class="grid-100 mobile-grid-100">
+							<div class="grid-100 mobile-grid-100">
+								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
+									<a href="user.html">
+										<span class="grid-30 mobile-grid-20 grid-parent">
+											<img src="images/person.jpg" class="details--block__image">
+										</span>
+										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
+									</a>
+								</div>
+							</div>
+                    	</div>
+                	</div>
+                </div>
+           	</div>
         </div>
     </section>
     <footer class="grid-100 mobile-grid-100">

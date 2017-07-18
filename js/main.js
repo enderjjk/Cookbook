@@ -14,12 +14,14 @@ function closeNav() {
 $(function(){
 	
 	$(document).on('click', '#menu-icon', function(){
+		
 		$(this).toggleClass('is-active');
 		if ($(this).hasClass('is-active')){
 			openNav();
 		}else{
 			closeNav();
 		}	
+		
 	}).on('click', '#navigation a', function(){
 		var base = $('#menu-icon');
 		base.toggleClass('is-active');
@@ -28,11 +30,22 @@ $(function(){
 		}else{
 			closeNav();
 		}	
-	});
-	
-	$(document).on('click', '#search-top', function(){
+	}).on('click', '#search-top', function(){
+		
 		$('#search-area').toggleClass('open');
+		
 	}).on('click', '#mobile-menu', function(){
+		
 		$('#mobile-menu-area').toggleClass('open');
+		
+	}).on('click' , '#bookmark', function(){
+		
+		var item = $(this).next('i');
+		if item.hasClass('fa-bookmark-o'){
+			item.removeClass('fa-bookmark-o').addClass('fa-bookmark');
+		}else{
+			item.addClass('fa-bookmark-o').removeClass('fa-bookmark');
+		}
+		
 	});
 });

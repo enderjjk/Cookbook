@@ -32,48 +32,70 @@
 	<script src="js/jquery-migrate-3.0.0.js"></script>
 	<script src="js/waypoints.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-	<script src="js/main.js"></script>
 	<script src="js/modernizr.custom.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
 	
 </head> 
 <body>
-	<header>
-		<div class="grid-100 mobile-grid-100 grid-parent header hide-on-mobile">
-			<div class="grid-15 mobile-grid-30 logo">
-				<h1><a href="#" title="Cook Book">Cook Book</a></h1>
+		<header class="grid-100 mobile-grid-100 grid-parent header">
+		<section class="grid-100 mobile-grid-100 grid-parent section--header hide-on-mobile">
+			<div class="grid-15 mobile-grid-30 section--header--logo">
+				<h1><a href="#" title="Cook Book" class="section--header--logo__link">Cook Book</a></h1>
 			</div>
-			<div class="grid-45 top-search-area">
+			<div class="grid-45 section--header--search">
 				<input class="grid-100" placeholder="What would you like to cook?" value="" data-reactid="" type="search">
 			</div>
-			<nav class="grid-40 top-left">
-				<ul class="grid-100 grid-parent">
-					<li><a href="index.html">What to Cook</a></li>
-					<li><a href="index.html">Cooking Guides</a></li>
-					<li><button id="login" class="login-top">LOG IN <i class="fa fa-user-o" aria-hidden="true"></i></button></li>          
-				</ul>
+			<nav class="grid-40 section--header--navigation">
+				<a href="index.html" class="section--header--navigation__links">What to Cook</a>
+				<a href="index.html" class="section--header--navigation__links">Cooking Guides</a>
+				<button id="login"  class="section--header--navigation__links login-top">LOG IN <i class="fa fa-user-o" aria-hidden="true"></i></button>
 			</nav>
 		</div>
 		<div class="mobile-grid-100 grid-parent header hide-on-desktop">
-			<div class="mobile-grid-35 top-left">
-				<button id="mobile-menu" class="mobile-icon hide-on-desktop"><i class="fa fa-bars" aria-hidden="true"></i></button>
-			</div>
 			<div class="mobile-grid-30 logo">
 				<h1><a href="#" title="Cook Book">Cook Book</a></h1>
 			</div>
-			<div class="mobile-grid-35 top-right">
-				<button id="login" class="mobile-icon login-top-mobile"><i class="fa fa-user-o" aria-hidden="true"></i></button>
+			<div class="mobile-grid-70 top-right">
+				<div id="menu-icon" class="menu-icon menu-icon--elastic" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+					<div class="menu-icon-box">
+						<div class="menu-icon-inner"></div>
+					</div>
+				</div>
+			</div>
+			<div id="navigation" class="overlay">
+				<div class="mobile-grid-100 grid-parent menu-mobile">
+					<div class="search-mobile mobile-grid-100">
+						<div class="mobile-grid-100 grid-parent search-area-inner-mobile">
+							<div class="mobile-grid-70">
+								<input class="mobile-grid-100">
+							</div>
+							<div class="mobile-grid-30">
+								<button id="search-global" class="search-global mobile-grid-100">SEARCH</button>
+							</div>
+						</div>
+						<div class="mobile-grid-100 search-area-extra">
+							<h6>Popular Searches:</h6>
+							<ul>
+								<li><a href="#">Easy</a></li>
+								<li><a href="#">Medium</a></li>
+								<li><a href="#">Hard</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="navigation-mobile grid-100 mobile-grid-100">
+						<div class="grid-100 mobile-grid-100">
+							<a href="index.html" class="hvr-shutter-out-vertical">What to Cook</a>
+							<a href="index.html" class="hvr-shutter-out-vertical">Cooking Guides</a>
+							<button id="login" class="login-top">LOG IN <i class="fa fa-user-o" aria-hidden="true"></i></button> 
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
     </header>
-    <ul class="mobile-grid-100 grid-parent mobile-menu-area hide-on-desktop" id="mobile-menu-area">
-    	<li class="mobile-grid-100"><a href="index.html">ITEM</a></li>
-        <li class="mobile-grid-100"><a href="index.html">ITEM</a></li>
-        <li class="mobile-grid-100"><a href="index.html">ITEM</a></li>
-        <li class="mobile-grid-100"><a href="index.html">ITEM</a></li>
-    </ul>
-    <div class="grid-100 mobile-grid-100 grid-parent search-area" id="search-area">
+    <section class="grid-100 mobile-grid-100 grid-parent search-area hide-on-mobile" id="search-area">
     	<div class="grid-container">
         	<div class="grid-100 mobile-grid-100 grid-parent search-area-inner">
             	<div class="grid-80 mobile-grid-70">
@@ -91,72 +113,102 @@
                     <li><a href="#">Hard</a></li>
                 </ul>
             </div>
-            
         </div>
-    </div>
-    <div class="grid-100 mobile-grid-100 grid-parent">
+    </section>
+    <article class="grid-100 mobile-grid-100 grid-parent article--main">
     	<div class="grid-container">
-        	<div class="grid-100 mobile-grid-100 grid-parent recipe-area">
-	            <div class="grid-100 mobile-grid-100 grid-parent inside">
+        	<section class="grid-100 mobile-grid-100 grid-parent section--recipe">
+	            <div class="grid-100 mobile-grid-100 grid-parent section--recipe--inside">
                 	<div class="grid-100 mobile-grid-100">
-		            	<h1>Ipsum lorem this is a article title</h1>
-		                <div class="grid-100 mobile-grid-100 grid-parent">
-		                	 <div class="grid-50 mobile-grid-100 grid-parent user-area">
-		                            <div class="grid-20 mobile-grid-100 user-img">
+						<div class="grid-100 mobile-grid-100">
+							<h2>Ipsum lorem this is a article title</h2>
+						</div>
+		                <div class="grid-100 mobile-grid-100">
+		                	<div class="grid-75 mobile-grid-100 grid-parent section--recipe--top">
+								<div class="grid-40 mobile-grid-100 details--block--user-area">
+		                            <div class="grid-20 mobile-grid-100">
 										<a href="user.html">
-											<img src="images/person.jpg">
+											<img src="images/person.jpg" class="details--block__image">
 										</a>
 		                            </div>
 									<div class="grid-80 mobile-grid-100">
 										<a href="user.html">
-											<h5>USER NAME</h5>
+											<h5 class="details--block__name">USER NAME</h5>
 										</a>
 									</div>
+								</div>
+								<div class="grid-60 mobile-grid-100 grid-parent section--recipe--details">
+									<div class="grid-33 mobile-grid-33 grid-parent">
+										<div class="section--recipe--details__items cooking-time"><h4>2h</h4></div>
+									</div>
+									<div class="grid-33 mobile-grid-33 grid-parent">
+										<div class="section--recipe--details__items prep-time"><h4>1h</h4></div>
+									</div>
+									<div class="grid-33 mobile-grid-33 grid-parent">
+										<div class="section--recipe--details__items spice-range"><i class="fa fa-thermometer-full" aria-hidden="true"></i></div>
+									</div>
+								</div>
 		                    </div>
-		                    <div class="grid-45 mobile-grid-100 grid-parent">
-		                    	<div class="cook-time"><h3>2h</h3><h4>Cook</h4></div>
-								<div class="prep-time"><h3>1h</h3><h4>Prep</h4></div>
-								<div class="spicyness"><i class="fa fa-thermometer-full" aria-hidden="true"></i>
-</div>
-		                    </div>
+		                    <div class="grid-25 mobile-grid-100 grid-parent details--action--group">
+								<button id="bookmark" class="bookmark details--action--group__share-button icon is-open"><i class="fa fa-bookmark-o" aria-hidden="true"></i> &nbsp;&nbsp;Bookmark Recipe</button>
+								<button class="print details--action--group__share-button icon" title="Print this recipe"><i class="fa fa-print" aria-hidden="true"></i></button>
+							</div>
 		                </div>
-	                    <div class="grid-100 mobile-grid-100 grid-parent recipe-area-intro">
-	                    	
-	                        <div class="grid-60 mobile-grid-100">
+	                    <div class="grid-100 mobile-grid-100 grid-parent section--recipe--intro">
+	                        <div class="grid-50 mobile-grid-100">
 	                        	<p>This lentil salad looks and tastes bright, thanks to a combination of tangerine juice, sherry vinegar and colorful caramelized roasted root vegetables. It works either as a main course, served with good bread and butter, or as side dish with roasted meat or fish. For the maximum visual impact, use both golden and red beets. Vegetarians can feel free to leave out the bacon. Leftovers will keep for at least five days, though try to pack it up without the radicchio, which gets soggy in the fridge.</p>
 	                        </div>
-							<div class="grid-40 mobile-grid-100">
-	                    		<img src="images/background-small.jpg" width="100%">
+							<div class="grid-50 mobile-grid-100">
+	                        	<img src="images/background.jpg" class="grid-100 mobile-grid-100" alt="Image" />
 	                        </div>
 	                    </div> 
                  	</div>
 					<div class="grid-100 mobile-grid-100">
 						<div class="grid-100 mobile-grid-100">
-							<div class="grid-100 mobile-grid-100 grid-parent tags-and-comments">
-								<ul class="grid-50 mobile-grid-100 grid-parent tags">
-									<li><span>Tags:</span></a></li>
-									<li><a href="#">Tag 1</a></li>
-									<li><a href="#">Tag 2</a></li>
-									<li><a href="#">Tag 3</a></li>
-									<li><a href="#">Tag 4</a></li>
-								</ul>
+							<div class="grid-100 mobile-grid-100 grid-parent recipe--intro--tags">
+								<div class="grid-50 mobile-grid-100 grid-parent recipe--tags__items">
+									<p>
+										<a href="#">Tag 1</a>
+										<a href="#">Tag 2</a>
+										<a href="#">Tag 3</a>
+										<a href="#">Tag 4</a>
+									</p>
+								</div>
+								<div class="grid-25 mobile-grid-50 grid-parent recipe--intro--cooked">
+									<div>
+										<button>
+											<i class="fa fa-check-circle-o" aria-hidden="true"></i> Mark as <strong>Cooked</strong>
+										</button>
+									</div>
+								</div>
+								<div class="grid-25 mobile-grid-50 grid-parent recipe--intro--ratings">
+									<div class="grid-50 mobile-grid-50 grid-parent recipe--intro--ratings__label">
+										<span>123</span>
+									</div>
+									<div class="grid-50 mobile-grid-50 grid-parent recipe--intro--ratings__items">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="grid-100 mobile-grid-100 recipe-instructions">
+					<div class="grid-100 mobile-grid-100 grid-parent section--advertisment">
+						<img src="images/advert/example.jpg" />
+					</div>
+					<div class="grid-100 mobile-grid-100 recipe--instructions">
 						<div class="grid-30 mobile-grid-100">
-							<div class="recipe-ingredients-wrap">
-								<h2>Ingredients</h2>
-								<ul class="recipe-ingredients">
-									<li>
-										<span class="grid-20 mobile-grid-20 quantity">1</span>
-										<span class="grid-20 mobile-grid-80 ingredient-name">Item 1</span>
+							<div class="recipe--ingredients--wrap">
+								<h3>Ingredients</h3>
+								<ul class="recipe--ingredients">
+									<li class="recipe-ingredients__item">
+										<span class="grid-20 mobile-grid-20 recipe-ingredients__quantity">1</span>
+										<span class="grid-20 mobile-grid-80 recipe-ingredients__name">Item 1</span>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div class="grid-70 mobile-grid-100 recipe-steps-wrap">
-							<h2>Preparation</h2>
+						<div class="grid-70 mobile-grid-100 recipe--steps--wrap">
+							<h3>Preparation</h3>
 							<ol class="recipe-steps">
 								<li>Step 1</li>
 								<li>Add the tomatoes, carrots and celery, cover loosely, and simmer until the vegetables are soft, about 25 minutes longer. While soup simmers, mix the chopped rosemary, grated Parmesan, lemon zest and pepper in a small bowl.</li>
@@ -167,7 +219,7 @@
              	</div>
             </div>
         </div>
-    </div>
+    </article>
     <footer class="grid-100 mobile-grid-100">
     	<div class="grid-container">
         	<ul class="grid-50 mobile-grid-100">
