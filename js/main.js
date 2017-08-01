@@ -39,13 +39,13 @@ $(function(){
 		$('#mobile-menu-area').toggleClass('open');
 		
 	}).on('click' , '#bookmark', function(){
-		
+		/*
 		var item = $(this).next('i');
 		if item.hasClass('fa-bookmark-o'){
 			item.removeClass('fa-bookmark-o').addClass('fa-bookmark');
 		}else{
 			item.addClass('fa-bookmark-o').removeClass('fa-bookmark');
 		}
-		
+		*/
 	});
 });

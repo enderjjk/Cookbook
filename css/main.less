@@ -41,6 +41,7 @@ src: url('../fonts/prometheus.ttf'),
 @font-color-dark: darken(@font-color, 20%);
 @logo-red-rgb: rgb(226, 51, 27);
 @logo-red-rgba: rgba(226,51,27, 0.9); 
+@green: #74dd9a;
 
 body{ 
 	font-family: @font-body;
@@ -177,11 +178,7 @@ button, .details--action--group a{
 		color:#fff;
 	}
 }
-.details--action--group {
-	& button, & a { 
-		line-height:36px; 
-	}
-}
+
 input{ 
 	font-family:@font-family-headers-bold;
 	font-size:1.25em;
@@ -472,18 +469,25 @@ input{
 	}
 }
 .recipe--intro--ratings__label{
+	font-family: @font-body;
 	& span{
-		font-size:1.4em;
+		font-family: @font-body;
+		line-height: 2em;
+		font-size: 1.4em;
+		float: right;
 		&:after {
 			content: " ratings";
 		}
 	}
 }
 .recipe--intro--cooked {
+	font-family: @font-body;
 	> div {
 		margin-right: .8em;
 		padding-right: 1em;
 		border-right: 1px solid #e2e2e2;
+		height: 2em;
+		line-height: 2em;
 		display: inline-block;
 		position: relative;
 		z-index: 1;
@@ -493,7 +497,8 @@ input{
 			background: none;
 			color: #e2331b;
 			font-size: 1.25em;
-			height: 100%;
+			height: 100%!important;
+			
 			margin: 0;
 			padding: 0;
 			cursor: pointer;
@@ -544,22 +549,20 @@ footer{
 		}
 	}	
 	& .recipe--intro--tags{ 
-		margin:10px 0; 
-		padding-top:10px; 
-		padding-bottom:10px; 
+		margin:1em 0; 
+		padding:1em; 
 		border-top:5px solid @borders; 
 		border-bottom:1px solid lighten(@borders,50%);
 		& .recipe--tags__items{ 
-			float:left; 
 			color:@borders; 
 			& p{
 				padding:0;
-				margin-right:10px; 
+				margin-right:1em; 
 				font-size:1.4em; 
 				& a{ 
 					color:@logo-red-rgb; 
 					float:left; 
-					margin-right:10px; 
+					margin-right:1em; 
 					text-decoration:none;
 					&:after{
 						content:', ';
@@ -649,17 +652,19 @@ footer{
 	}
 	& .section--recipe--details{
 		& .section--recipe--details__items{
+			float:left;
+			margin:0 0 0 1em;
 			font-size: 1.4em;
-			line-height: 36px;
+			line-height: 2.5em;
 			& h4{ 
 				font-family: @font-family-headers-bold;
 				font-size:1em;
 				float:left;
 				padding-bottom:0;
-				color:@borders!important;
+				color:@borders;
 			}
 			&:before{
-				line-height: 42px;
+				line-height: 3em;
 				content:'COOKING ';
 				font-family: @font-body;
 				color:@font-color;
@@ -671,10 +676,36 @@ footer{
 					content:'PREP ';
 				}
 			}
+			&.spice-range{
+				&:before{
+					content:'SPICE ';
+				}
+				&.low{ 
+					& h4{ 
+						color: @green;
+					}
+				}
+				&.medium{ 
+					& h4 {
+						color: lighten(@logo-red-rgb, 25% ); 
+					}
+				}
+				&.hot{ 
+					& h4{ 
+						color: @logo-red-rgb; 
+					}
+				}
+			}
 		} 
 		
 	}
 	
 } 
 
-
+.recipe--intro--cooked {
+	& button { 
+		font-family:@font-body!important;
+		line-height:1em; 
+		font-size:1.4em;
+	}
+}
