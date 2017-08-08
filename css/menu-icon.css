@@ -1,8 +1,8 @@
 .menu-icon {
 	position:fixed;
-	top:10px;
-	right:10px;
-	padding: 15px;
+	top:1em;
+	right:1em;
+	padding: 1.5em 1.5em 2em 1.5em;
 	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, -webkit-filter;
@@ -27,8 +27,8 @@
 }
 
 .menu-icon-box {
-	width: 30px;
-	height: 18px;
+	width: 3em;
+	height: 1.8em;
 	display: inline-block;
 	position: relative; 
 	border:0;
@@ -37,12 +37,12 @@
 .menu-icon-inner {
 display: block;
 top: 50%;
-margin-top: -2px; }
+margin-top: -0.2em; }
 .menu-icon-inner, .menu-icon-inner::before, .menu-icon-inner::after {
-	width: 30px;
-	height: 3px;
+	width: 3em;
+	height: 0.3em;
 	background-color: #fff;
-	border-radius: 3px;
+	border-radius: 0.3em;
 	position: absolute;
 	transition-property: -webkit-transform;
 	transition-property: transform;
@@ -57,10 +57,10 @@ margin-top: -2px; }
 	display: block;
 }
 .menu-icon-inner::before {
-top: -10px;
+top: -1em;
 }
 .menu-icon-inner::after {
-bottom: -10px; }
+bottom: -1em; }
 
 /*
  * 3DX

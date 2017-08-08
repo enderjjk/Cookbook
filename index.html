@@ -38,15 +38,17 @@
 	<header class="grid-100 mobile-grid-100 grid-parent header">
 		<section class="grid-100 mobile-grid-100 grid-parent section--header hide-on-mobile">
 			<div class="grid-15 mobile-grid-30 section--header--logo">
-				<h1><a href="#" title="Cook Book" class="section--header--logo__link">Cook Book</a></h1>
+				<h1><a href="index.html" title="Cook Book" class="section--header--logo__link">Cook Book</a></h1>
 			</div>
 			<div class="grid-45 section--header--search">
 				<input class="grid-100" placeholder="What would you like to cook?" value="" data-reactid="" type="search">
 			</div>
 			<nav class="grid-40 section--header--navigation">
-				<a href="index.html" class="section--header--navigation__links">What to Cook</a>
-				<a href="index.html" class="section--header--navigation__links">Cooking Guides</a>
-				<button id="login"  class="section--header--navigation__links login-top">LOG IN <i class="fa fa-user-o" aria-hidden="true"></i></button>
+				<a href="index.html" class="section--header--navigation__links">Recipes</a>
+				<a href="index.html" class="section--header--navigation__links">Community</a>
+				<button id="sign-up" class="section--header--navigation__links login-top">SIGN UP <i class="fa fa-user-o" aria-hidden="true"></i></button>
+				<span class="or"> OR </span>
+				<button id="sign-up" class="section--header--navigation__links login-top">SIGN IN <i class="fa fa-user-o" aria-hidden="true"></i></button>
 			</nav>
 		</section>
 		<section class="mobile-grid-100 grid-parent section--header hide-on-desktop">
@@ -82,9 +84,11 @@
 					</div>
 					<div class="navigation-mobile grid-100 mobile-grid-100">
 						<div class="grid-100 mobile-grid-100">
-							<a href="index.html" class="hvr-shutter-out-vertical">What to Cook</a>
-							<a href="index.html" class="hvr-shutter-out-vertical">Cooking Guides</a>
-							<button id="login" class="login-top">LOG IN <i class="fa fa-user-o" aria-hidden="true"></i></button> 
+							<a href="index.html" class="hvr-shutter-out-vertical">Recipes</a>
+							<a href="index.html" class="hvr-shutter-out-vertical">Community</a>
+							<button id="sign-up-mobile" class="mobile-grid-40 login-top">SIGN UP <i class="fa fa-user-o" aria-hidden="true"></i></button> 
+							<span class="mobile-grid-20 or"> OR </span>
+							<button id="sign-in-mobile" class="mobile-grid-40 login-top">SIGN IN <i class="fa fa-user-o" aria-hidden="true"></i></button> 
 						</div>
 					</div>
 				</div>
@@ -111,268 +115,969 @@
             </div>
         </div>
     </div>
-    <section class="grid-100 mobile-grid-100 grid-parent section--main--image" id="recipe-of-a-day">
+    <section id="recipe-of-a-day" class="grid-100 mobile-grid-100 grid-parent section--main--image">
     	<div class="grid-100 mobile-grid-100 grid-parent section--main--image__image">
-			<div class="grid-100 mobile-grid-100 grid-parent section--main--image--details-block">
-        		<div class="details-block__label">RECIPE OF A DAY</div>
-                <h3><a href="#">Ipsum lorem with ipsum lorem</a></h3>
-                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli. Neque porro quisquam est qui dolorem ipsum quia.</p>
-                <div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
-	                <a href="user.html">
-                    	<span class="grid-30 mobile-grid-30">
-                			<img src="images/person.jpg" class="details--block__image">
-                        </span>
-                        <h5 class="grid-70 mobile-grid-70 details--block__name">USER NAME</h5>
-                    </a>
-                </div>
-        	</div>
+			<div class="grid-100 mobile-grid-100 section--main--image__image--relative grid-container">
+				<div class="grid-100 mobile-grid-100 grid-parent section--main--image--details-block">
+					<div class="details-block__label">RECIPE OF A DAY</div>
+					<h3><a href="#">Ipsum lorem with ipsum lorem</a></h3>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli. Neque porro quisquam est qui dolorem ipsum quia.</p>
+					<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+						<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+							<a href="user.html">
+								<img src="images/person.jpg" class="details--block__image">
+							</a>
+						</div>
+						<div class="grid-70 mobile-grid-100">
+							<a href="user.html">
+								<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="social">
+					<ul class="social--list">
+						<li class="social--list__item social--list__item--label">Share: </li>
+						<li class="social--list__item"><a href="#" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+						<li class="social--list__item"><a href="#" title="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="social--list__item"><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="social--list__item"><a href="#" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+						<li class="social--list__item"><a href="#" title="Mail"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
         </div>
     </section>
     <section class="grid-container">
     	<div class="grid-100 mobile-grid-100 grid-parent main-content">
-        	<h2 class="grid-100 mobile-grid-100">Latest Recipes</h2>
-        	<div class="grid-100 mobile-grid-100 grid-parent items--list">
-                <div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+			<div id="section--explore--cookbook" class="grid-100 mobile-grid-100 grid-parent section--items--list section--explore--cookbook">
+				<h2 class="grid-100 mobile-grid-100">Explore Cookbook</h2>
+				<div class="grid-100 mobile-grid-100 grid-parent items--list">
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="expolore.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="explore.html">Desserts (<span class="section--explore--cookbook__count">12</span>)</a></h2>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-                <div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="expolore.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="explore.html">Salads (<span class="section--explore--cookbook__count">12</span>)</a></h2>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="expolore.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="explore.html">Poultry  (<span class="section--explore--cookbook__count">12</span>)</a></h2>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="expolore.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="explore.html">Meat (<span class="section--explore--cookbook__count">12</span>)</a></h2>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="expolore.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="explore.html">Seasonal (<span class="section--explore--cookbook__count">12</span>)</a></h2>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="expolore.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="explore.html">Soup (<span class="section--explore--cookbook__count">12</span>)</a></h2>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="expolore.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="explore.html">Appetisers (<span class="section--explore--cookbook__count">12</span>)</a></h2>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="expolore.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="explore.html">Quick & Easy (<span class="section--explore--cookbook__count">12</span>)</a></h2>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="section--most--popular" class="grid-100 mobile-grid-100 grid-parent section--items--list">
+				<h2 class="grid-100 mobile-grid-100">Most Popular</h2>
+				<div class="grid-100 mobile-grid-100 grid-parent items--list">
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
-							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
 							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-				<div class="grid-25 mobile-grid-100 items--list__item">
-                	<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
-						<a href="article.html">
-							<img class="gird-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
-						</a>
-                        <div class="grid-100 mobile-grid-100">
-							<div class="grid-100 mobile-grid-100">
-								<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
-								<div class="grid-100 mobile-grid-100 grid-parent item--details__user-area details--block--user-area">
-									<a href="user.html">
-										<span class="grid-30 mobile-grid-20 grid-parent">
-											<img src="images/person.jpg" class="details--block__image">
-										</span>
-										<h5 class="grid-70 mobile-grid-80 grid-parent details--block__name">USER NAME</h5>
-									</a>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
 								</div>
 							</div>
-                    	</div>
-                	</div>
-                </div>
-           	</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-20 push-40 mobile-grid-100 view--more">
+					<button class="grid-100 mobile-grid-100">
+						View more <i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+			<div id="section--top--rated" class="grid-100 mobile-grid-100 grid-parent section--items--list">
+				<h2 class="grid-100 mobile-grid-100">Top Rated</h2>
+				<div class="grid-100 mobile-grid-100 grid-parent items--list">
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-20 push-40 mobile-grid-100 view--more">
+					<button class="grid-100 mobile-grid-100">
+						View more <i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+			<div id="section--most--shared" class="grid-100 mobile-grid-100 grid-parent section--items--list">
+				<h2 class="grid-100 mobile-grid-100">Most Shared</h2>
+				<div class="grid-100 mobile-grid-100 grid-parent items--list">
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-20 push-40 mobile-grid-100 view--more">
+					<button class="grid-100 mobile-grid-100">
+						View more <i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+			<div id="section--quick-n-easy" class="grid-100 mobile-grid-100 grid-parent section--items--list">
+				<h2 class="grid-100 mobile-grid-100">Quick & Easy</h2>
+				<div class="grid-100 mobile-grid-100 grid-parent items--list">
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html">
+											<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+											</div>
+											<div class="grid-70 mobile-grid-100">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-25 mobile-grid-100 items--list__item">
+						<div class="grid-100 mobile-grid-100 grid-parent items--list__item--details">
+							<a href="article.html" class="grid-100 mobile-grid-100 grid-parent item--details__cover--parent">
+								<img class="grid-100 mobile-grid-100 grid-parent item--details__cover" src="images/background-small.jpg">
+							</a>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100">
+									<h2><a href="article.html">Ipsum lorem ispum lorem lorem ipsum</a></h2>
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<div class="grid-30 mobile-grid-100 grid-parent details--block--user-area__image">
+											<a href="user.html">
+												<img src="images/person.jpg" class="details--block__image">
+											</a>
+										</div>
+										<div class="grid-70 mobile-grid-100">
+											<a href="user.html">
+												<h5 class="grid-100 mobile-grid-100 grid-parent details--block__name">USER NAME</h5>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 recipe--intro--ratings">
+								<div class="grid-40 mobile-grid-40 recipe--intro--ratings__time">
+									<i class="fa fa-clock-o" aria-hidden="true"></i> <span id="timer">90</span>
+								</div>
+								<div id="recipe--intro--ratings__items" class="grid-60 mobile-grid-60 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-20 push-40 mobile-grid-100 view--more">
+					<button class="grid-100 mobile-grid-100">
+						View more <i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
         </div>
     </section>
     <footer class="grid-100 mobile-grid-100">

@@ -47,5 +47,43 @@ $(function(){
 			item.addClass('fa-bookmark-o').removeClass('fa-bookmark');
 		}
 		*/
+	}).on('click', '#recipe--was--cooked', function(){
+		var base = $(this);
+		base.toggleClass('is--on');
+		if (base.hasClass('is--on')){
+			base.find('i').removeClass('fa-check-circle-o').addClass('fa-check-circle');
+		}else{
+			base.find('i').removeClass('fa-check-circle').addClass('fa-check-circle-o');
+		}
+	}).on('mouseenter', '#recipe--intro--ratings__items', function(){
+		
+		var currentRating = $('#recipe--intro--ratings__items').data('rating');
+		$(this).removeClass(currentRating);
+		
+	}).on('click', '#recipe--intro--ratings__items span', function(){
+		
+		var currentRating = $('#recipe--intro--ratings__items').data('rating');
+		var newRating = $('#recipe--intro--ratings__items .fa-star').filter(function() {
+			return $(this).css('display') !== 'none';
+		}).length;
+		
+		$(this).addClass('rating-'+newRating);
+		$('#recipe--intro--ratings__items').data('rating', 'rating-'+newRating);
+		
+	}).on('mouseleave', '#recipe--intro--ratings__items', function(){
+		var currentRating = $('#recipe--intro--ratings__items').data('rating');
+		$(this).addClass(currentRating);
+	}).on('click', '#metric--button button', function(){
+		$('#metric--button button').removeClass('is--active');
+		$(this).addClass('is--active');
+		
+	}).on('click', '#plus', function () {
+		var value = $('#serving__counter__input').val();
+		value++;
+		$('#serving__counter__input').val(value);
+	}).on('click', '#minus', function () {
+		var value = $('#serving__counter__input').val();
+		value--;
+		$('#serving__counter__input').val(value);
 	});
 });

@@ -42,6 +42,7 @@ src: url('../fonts/prometheus.ttf'),
 @logo-red-rgb: rgb(226, 51, 27);
 @logo-red-rgba: rgba(226,51,27, 0.9); 
 @green: #74dd9a;
+@add-to-basket-icon:#2370ba;
 
 body{ 
 	font-family: @font-body;
@@ -64,7 +65,6 @@ a{
 .clear{ clear:both; }
 h1, h2, h3, h4{
 	font-family:"Arno Pro";
-	font-style:italic;	
 	padding-bottom:0.75em;
 }
 h1 { font-size:4em; padding-bottom:1em;  }
@@ -79,14 +79,14 @@ button{
 	position:fixed;
 	top:0;
 	z-index:1;
-	height:70px;
+	height:7em;
 	& .section--header{
 		background:@font-color-dark;
 		& .section--header--logo {
 			& h1 { 
 				padding:0;
-				margin:10px 0;
-				height:50px; 
+				margin:0.225em 0;
+				height: 1.5em;
 				width:100%; 
 				float:left; 
 				background:url("../images/cookbook.png") no-repeat center center;
@@ -102,34 +102,42 @@ button{
 		}
 		& .section--header--navigation{
 			font-family:@font-family-headers-bold;
-			height:70px; 
-			& .section--header--navigation__links {
-				height:65px;
-				border-bottom:5px solid @borders;
+			height:7em; 
+			& .or { 
+				line-height:6em;
+				text-transform:uppercase;
+				font-size:1.25em;
 				float:left;
-				line-height:65px;
+				margin:0 0.25em 0 1em;
+				color:#fff; 
+			}
+			& .section--header--navigation__links {
+				height:6em;
+				border-bottom:0.25em solid @borders;
+				float:left;
+				line-height:6em;
 				text-transform:uppercase;
 				font-size:1.25em;
 				color:@background-content;
 				padding:0;
 				text-decoration:none;
-				margin-left:15px; 
+				margin-left:1.5em; 
 				&:hover{ 
 					color:#ffffff; 
-					border-bottom:5px solid #ffffff;
+					border-bottom:0.25em solid #ffffff;
 				}
 				&.login-top{
 					line-height:100%;
-					margin:15px 0 15px 15px;
-					padding:0 15px; 
-					height:40px;
+					margin:1em 0 1em 1em;
+					padding:0 1em; 
+					height:4em;
 					font-family:@font-family-headers-bold;
-					border:1px solid @background-color;
+					border:0.1em solid @background-color;
 					background:none;
 					color:@background-color;
 					&:hover{
 						background:@logo-red-rgb;
-						border:1px solid @logo-red-rgb;
+						border:0.1em solid @logo-red-rgb;
 						color:#fff;
 					}
 				}
@@ -140,9 +148,9 @@ button{
 			margin:0;
 			color:@background-content;
 			float:left;
-			width:42px;
-			height:42px;
-			border:1px solid @background-content;
+			width:4.2em;
+			height:4.2em;
+			border:0.1em solid @background-content;
 			z-index:9;
 			float:left;
 			cursor:pointer;
@@ -152,38 +160,38 @@ button{
 		}
 	}
 }
-.section--header--search{
-	& input { margin:15px 0; }
-}
 section{
 	&:nth-of-type(2) {
 		
 	}
 }
-.article--main { margin-top:70px; }
+.article--main { margin-top:7em; }
 button, .details--action--group a{
 	font-family:@font-family-headers-bold;
-	float:left;
-	border:1px solid @logo-red-rgb;
+	float:right;
+	border:0.1em solid @logo-red-rgb;
 	background:none;
 	color:@logo-red-rgb;
 	font-size:1.25em;
-	height:38px;
-	margin-left:10px;
-	padding:0 15px; 
+	height:3em;
+	margin-left:1em;
+	padding:0 1.5em; 
 	cursor:pointer;
 	&:hover{
 		background:@logo-red-rgb;
-		border:1px solid @logo-red-rgb;
+		border:0.1em solid @logo-red-rgb;
 		color:#fff;
 	}
 }
 
+.section--header--search{
+	& input { margin:1em 0; }
+}
 input{ 
 	font-family:@font-family-headers-bold;
 	font-size:1.25em;
-	height:40px;
-	line-height:40px;
+	height:4em;
+	line-height:4em;
 	border:0;
 	color:#333;
 	background:#f3f3f3;
@@ -191,15 +199,15 @@ input{
 		background:#fff;
 	}
 }
-.margin-15-0{ margin:15px 0; }
+.margin-15-0{ margin:1.5em 0; }
 
 .search-area{
 	background-color: rgba(0, 0, 0, 0.85);
 	transform: translate(0px, 0px);
-	height: 150px;
+	height: 15em;
     opacity: 0;
     position: absolute;
-    transform: translate(0px, -200px);
+    transform: translate(0px, -20em);
     transition-delay: 0s, 0s;
     transition-duration: 0.4s, 0.4s;
     transition-property: transform, opacity;
@@ -214,9 +222,9 @@ input{
 	}
 }
 .search-area-inner{ 
-	margin-top:60px;
+	margin-top:6em;
 	& input{ 
-		margin:15px 0;
+		margin:1.5em 0;
 	}
 	& button{
 		padding:0;
@@ -224,7 +232,7 @@ input{
 		background:@logo-red-rgb;
 		color:@background-content;
 		font-size:1.6em;
-		height:40px;
+		height:4em;
 		cursor:pointer;
 		&:hover{
 			background:#cf2912;
@@ -236,10 +244,10 @@ input{
 	margin-top:70px;
 	& button{
 		padding:0;
-		border:1px solid @logo-red-rgb;
+		border:0.1em solid @logo-red-rgb;
 		background:@logo-red-rgb;
 		color:@background-content;
-		height:40px;
+		height:4em;
 		cursor:pointer;
 		&:hover{
 			background:#fff;
@@ -253,7 +261,7 @@ input{
 	& h6, & ul{ 
 		float:left;
 		font-size: 1.25em;
-		padding:10px 0;
+		padding:1em 0;
 	}
 	& h6 {
 		color: #999;
@@ -261,8 +269,8 @@ input{
 	& ul {
 		& > li{ 
 			float:left;
-			border-left:1px solid #4d4d4d;
-			padding:0 5px; 
+			border-left:0.1em solid #4d4d4d;
+			padding:0 0.5em; 
 			&:first-child {
 				border-left:0;
 			}
@@ -295,8 +303,8 @@ input{
 				float:left;
 				width:100%;
 				text-align:center;
-				line-height:40px;
-				height:40px;
+				line-height:4em;
+				height:4em;
 				font-family:@font-family-headers-bold;
 				font-size:2em;
 				font-weight:600;
@@ -306,19 +314,19 @@ input{
 					background:#fff;
 				}
 			}
-			& button{ margin-top:2em;}
+			& button{ margin-top:1.5em;}
 		}
 	}
 	button{
 		float:left;
-		border:1px solid @background-content;
+		border:0.1em solid @background-content;
 		color:@background-content;
 		background:none;
 		cursor:pointer;
 		margin:0;
 		&:hover{
 			background:@background-content;
-			border:1px solid @background-content;
+			border:0.1em solid @background-content;
 			color:@logo-red-rgb;
 		}
 	}
@@ -327,66 +335,68 @@ input{
 /* MOBILE MENU END*/
 
 .section--main--image{
-	min-height:460px;
+	min-height:46em;
 	position:relative;
 	margin-bottom:2em;
-	margin-top:70px;
+	margin-top:7em;
 	& .section--main--image__image{
-		position: relative;
-		height:460px;
+		height:46em;
 		width: 100%;
 		background-image:url("../images/background.jpg");
 		background-repeat:no-repeat;
 		background-position:center center!important;
-		background-size:cover!important;
-		
-	}
-	& .section--main--image--details-block{
-		top:90px;
-		left:90px;
-		position: absolute;
-		width:280px;
-		height:300px;
-		padding:3.25em 3em;
-		background:@background-content;
-		& .details-block__label{
-			font-family:@font-family-headers-medium;
-			width:80px;
-			height:40px;
-			line-height:20px;
-			padding:30px 10px;
-			border-radius:50px;
-			-moz-border-radius:50px;
-			background:@logo-red-rgb;
-			color:@background-content;
-			font-size:1.4em;
-			text-align:center;
-			font-style:italic;
-			position:absolute;
-			font-weight:400;
-			top:-50px;
-			left:-50px;
-		}
-		& h3{
-			text-align:center;
-			font-size:3em;
-			color:@borders;
-			padding-bottom:0.5em;
-		}
-		& p{
-			text-align:center;
-			font-size:1.4em;
-			line-height:1.4em;
+		background-size:cover!important;	
+		& .section--main--image__image--relative{
+			height: 100%;
+			position: relative;
+			& .section--main--image--details-block{
+				top:9em;
+				left:5em;
+				position: absolute;
+				width:28em;
+				height:30em;
+				padding:3.25em 3em;
+				background:@background-content;
+				& .details-block__label{
+					font-family:@font-family-headers-medium;
+					width:5em;
+					height:4em;
+					line-height:1.75em;
+					padding:1em 0.5em;
+					border-radius:50%;
+					-moz-border-radius:50%;
+					background:@logo-red-rgb;
+					color:@background-content;
+					font-size:1.4em;
+					text-align:center;
+					font-style:italic;
+					position:absolute;
+					font-weight:400;
+					top:-3em;
+					left:-3em;
+				}
+				& h3{
+					text-align:center;
+					font-size:3em;
+					color:@borders;
+					padding-bottom:0.5em;
+				}
+				& p{
+					text-align:center;
+					font-size:1.4em;
+					line-height:1.4em;
+				}
+			}
 		}
 	}
 }
 .details--block--user-area {
 	& .details--block__image { 
-		float:right; 
-		width:40px; 
-		height:40px; 
-		border-radius:20px;
-		-moz-border-radius:20px;
+		float:left; 
+		width:4em; 
+		height:4em; 
+		border-radius:50%;
+		-moz-border-radius:50%;
 	}
 	& .details--block__name{ 
 		text-transform:uppercase;
@@ -407,20 +417,65 @@ input{
 }
 .section--recipe--inside{
 	& .details--block__name{ 
-		line-height:36px;
+		line-height:2.5em
+	}
+}
+
+.social{
+	font-size: 1.4em;
+	line-height: 3em;
+	& .social--list{
+		list-style-type:none;
+		display:inline;
+		& .social--list__item{
+			list-style-type:none;
+			display:inline;
+			margin-left:0.5em;
+			color:@font-color;
+			top: 0.2em;
+			position: relative;
+			& a {
+				& .fa { color:@logo-red-rgb; font-size:1.5em; }
+				&:hover{
+					& .fa { color:darken(@logo-red-rgb,20%); }
+				}
+			}	
+			&.social--list__item--label{ margin:0; top: 0; }
+		}
+	}
+}
+.section--main--image__image--relative {
+	& .social{
+		& .social--list{
+			position:absolute;
+			bottom:0;
+			right:1em;
+			& .social--list__item{
+				& a {
+					& .fa { color:#fff; }
+					&:hover{
+						& .fa { color:@logo-red-rgb; }
+					}
+				}
+				&.social--list__item--label{ color:#fff; }
+			}	
+		}
 	}
 }
 .items--list{
 	& .items--list__item{
-		margin-bottom:20px;
+		margin-bottom:2em;
 		& .items--list__item--details{
 			background:#fff;
-			&:hover{
-				-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.25);
-				-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.25);
-				box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.25);
+			padding-bottom:2em;
+			& .item--details__cover--parent{  
+				overflow: hidden;
+				position: relative;
+				float: left;
+				height: 100%;
+				width: 100%;
+				& .item--details__cover{ background-size:contain; overflow:hidden; } 
 			}
-			& .item--details__cover{ width:100%; background-size:contain; float:left; }
 			& h2{
 				font-size:2em;
 				color:@borders;
@@ -430,19 +485,19 @@ input{
 			}
 			& .item--details__user-area{ 
 				& span{
-					height:40px;
+					height:4em;
 					position:relative;
 					& img{ 
 						position:absolute;
 						left:50%;
-						margin-left:-30px;
+						margin-left:-3em;
 					}
 				}
 				& h5{ 
 					font-family:@font-family-headers-medium;
 					text-align:left;
 				}
-				padding-bottom:20px;
+				padding-bottom:2em;
 				& a{
 					&:hover{ 
 						& img {
@@ -451,77 +506,236 @@ input{
 					}
 				}
 			}
+			&:hover{
+				-webkit-box-shadow: 0 0.2em 0.5em 0.1em rgba(0,0,0,0.25);
+				-moz-box-shadow: 0 0.2em 0.5em 0.1em rgba(0,0,0,0.25);
+				box-shadow: 0 0.2em 0.5em 0.1em rgba(0,0,0,0.25);
+				& .item--details__cover{
+					-webkit-transition: -webkit-transform 0.5s ease;
+					-moz-transition: -moz-transform 0.5s ease;
+					transition: transform 0.5s ease;
+					-webkit-transform: scale(1.1);
+					-moz-transform: scale(1.1);
+					-o-transform: scale(1.1);
+					transform: scale(1.1);
+				}
+			}
 		}
 	}
 }
+.button--simple{
+	border:0;
+	background:none;
+	height: auto;
+	margin:0;
+	padding:0;
+	font-size: 1.6em;
+	&:hover{
+		border:0;
+		background:inherit;
+	}
+
+}
+.section--items--list{
+	& .view--more{
+		margin-bottom:2em;
+		text-align:center;
+		& button{ margin-left:0; }
+	}
+}
+.recipe--intro--ratings__time{
+	font-size:1.25em;
+}
 .recipe--intro--ratings__items{
-	unicode-bidi: bidi-override;
-	direction: rtl;
-	& > span {
-		font-size:1.75em;
-		display: inline-block;
+	font-size:1.25em;
+	&::after{
+		content: " (123) ";
+		display: inline;
 		position: relative;
-		width: 1.1em;
-		&:hover:before, &:hover ~ span:before {
-			content: "\2605";
-			position: absolute;
+		color: #444;
+	}
+	
+	& .fa-star{
+		display:none;
+	}
+	& > span{ 
+		cursor:pointer;
+		position: relative;
+		&:hover{
+			& .fa-star{ 
+				display:inline-block;
+			}
+			& .fa-star-o{ 
+				display:none;
+			}
+			& ~ span{
+				& .fa-star-o{
+					display:inline-block;
+				}
+				& .fa-star{
+					display:none;
+				}
+			}
 		}
+		& + li:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -1em;
+			left: 0;
+			right: 0;
+			height: 1em;
+		}
+	}
+	&:hover > span{
+		& .fa-star{ 
+			display:inline-block;
+			color:@logo-red-rgb;
+		}
+		& .fa-star-o{ 
+			display:none;
+		}
+	}
+	&.ratings{
+		&.rating-1{
+			& span{
+				& .fa-star{ 
+				display:none;
+				}
+				& .fa-star-o{ 
+					display:inline-block;
+				}
+				&:nth-child(1) {
+					& .fa-star{ 
+						display:inline-block;
+					}
+					& .fa-star-o{ 
+						display:none;
+					}
+				}
+			}
+		}
+		&.rating-2{
+			& span{
+				& .fa-star{ 
+					display:none;
+				}
+				& .fa-star-o{ 
+					display:inline-block;
+				}
+				&:nth-child(1) {
+					& .fa-star{ 
+						display:inline-block;
+					}
+					& .fa-star-o{ 
+						display:none;
+					}
+				}
+				&:nth-child(2) {
+					& .fa-star{ 
+						display:inline-block;
+					}
+					& .fa-star-o{ 
+						display:none;
+					}
+				}
+			}
+			
+		}
+		&.rating-3{
+			& span{
+				& .fa-star{ 
+					display:none;
+				}
+				& .fa-star-o{ 
+					display:inline-block;
+				}
+				&:nth-child(1) {
+					& .fa-star{ 
+						display:inline-block;
+					}
+					& .fa-star-o{ 
+						display:none;
+					}
+				}
+				&:nth-child(2) {
+					& .fa-star{ 
+						display:inline-block;
+					}
+					& .fa-star-o{ 
+						display:none;
+					}
+				}
+				&:nth-child(3) {
+					& .fa-star{ 
+						display:inline-block;
+					}
+					& .fa-star-o{ 
+						display:none;
+					}
+				}
+			}
+		}
+		&.rating-4{
+			& span{
+				& .fa-star{ 
+					display:inline-block;
+				}
+				& .fa-star-o{ 
+					display:none;
+				}
+				&:nth-child(5) {
+					& .fa-star{ 
+						display:none;
+					}
+					& .fa-star-o{ 
+						display:inline-block;
+					}
+				}
+			}
+		}
+		&.rating-5{
+			& span{
+				& .fa-star{ 
+					display:inline-block;
+				}
+				& .fa-star-o{ 
+					display:none;
+				}
+			}
+			
+		}		
+	}
+}
+.items--list{
+	& .recipe--intro--ratings{
+		margin:2em 0 0 0;
 	}
 }
 .recipe--intro--ratings__label{
-	font-family: @font-body;
+	text-align:center;
 	& span{
-		font-family: @font-body;
-		line-height: 2em;
 		font-size: 1.4em;
-		float: right;
-		&:after {
-			content: " ratings";
-		}
 	}
 }
-.recipe--intro--cooked {
-	font-family: @font-body;
-	> div {
-		margin-right: .8em;
-		padding-right: 1em;
-		border-right: 1px solid #e2e2e2;
-		height: 2em;
-		line-height: 2em;
-		display: inline-block;
-		position: relative;
-		z-index: 1;
-		& button{
-			float: left;
-			border: none;
-			background: none;
-			color: #e2331b;
-			font-size: 1.25em;
-			height: 100%!important;
-			
-			margin: 0;
-			padding: 0;
-			cursor: pointer;
-		}
-	}
-}
+
 footer{
-	padding:20px 10px; 
+	padding:2em 1em; 
 	color:#fff;
 	margin: 10px 0 0 0; 
 	background-color:@borders;
-	border-top:5px solid #000; 
+	border-top:0.25em solid #000; 
 	& ul{ 
 		float:left; 
 		& li{ 
-			line-height:30px;
-			height:30px;
+			line-height:3em;
+			height:3em;
 			float:left;
 			color:#999999;
 			font-size:1.25em;
 		}
 		&:first-child {
-			& li{ margin-right:10px; }	
+			& li{ margin-right:1em; }	
 		}
 	}
 }
@@ -544,7 +758,6 @@ footer{
 		& p{ 
 			font-size: 1.4em;
 			line-height: 1.4em;
-			padding-bottom: 0;
 			color:@borders;
 		}
 	}	
@@ -553,9 +766,11 @@ footer{
 		padding:1em; 
 		border-top:5px solid @borders; 
 		border-bottom:1px solid lighten(@borders,50%);
+		line-height:1.1em;
 		& .recipe--tags__items{ 
 			color:@borders; 
 			& p{
+				line-height:1em;
 				padding:0;
 				margin-right:1em; 
 				font-size:1.4em; 
@@ -582,6 +797,8 @@ footer{
 		}
 		& .recipe--intro--cooked {
 			& button{
+				position:relative;
+				top:-2px;
 				padding:0;
 				text-transform:unset!important;
 				margin:0;
@@ -589,8 +806,17 @@ footer{
 				color:@font-color;
 				height:auto;
 				&:hover{
-					color:#000;
+					color:@logo-red-rgb;
 					background:none;
+				}
+			}
+			&.is--on{
+				& button{
+					color:@logo-red-rgb;
+					&:hover{
+						color:@font-color;
+						background:none;
+					}
 				}
 			}
 		}
@@ -605,15 +831,39 @@ footer{
 	}
 	& .recipe-ingredients__item
 	{
+		&.recipe-ingredients__add-all-item {
+			border-bottom:0.1em solid lighten(@font-color, 40%);
+			margin-bottom:1em;
+			padding-bottom:1em; 
+		}
 		& .recipe-ingredients__quantity {
 			font-weight: 600; 
 			text-align: right;
 		}
-		& .recipe-ingredients__quantity, & .recipe-ingredients__name {
+		& .recipe-ingredients__add-all {
+			font-weight: bold; 
+			text-align: left;
+		}
+		& .recipe-ingredients__quantity, & .recipe-ingredients__name, & .recipe-ingredients__add-all{
 			display: inline-block;
 			font-size: 1.4em;
 			line-height: 1.4em;
 			vertical-align: top;
+		}
+		& .recipe-ingredients__add {
+			display: inline-block;
+			& button{
+				& .fa{
+					cursor:pointer;
+					color:lighten(@add-to-basket-icon, 20%);
+					
+				}
+				&:hover{
+					& .fa{
+						color:darken(@add-to-basket-icon, 10%)!important;
+					}
+				}
+			}
 		}
 	}
 	& .recipe--instructions {
@@ -701,11 +951,90 @@ footer{
 	}
 	
 } 
-
-.recipe--intro--cooked {
-	& button { 
-		font-family:@font-body!important;
-		line-height:1em; 
-		font-size:1.4em;
+.or { 
+	line-height:6em;
+	text-transform:uppercase;
+	font-size:1.25em;
+	float:left;
+	margin:0 0.25em 0 1em;
+	color:#fff; 
+	text-align:center;
+}
+.section--explore--cookbook{
+	& .items--list {
+		& .items--list__item{
+			& .items--list__item--details{
+				position:relative;
+				& .details-block__label{
+					font-family:@font-family-headers-medium;
+					width:3em;
+					height:3em;
+					line-height:2.5em;
+					border-radius:50%;
+					-moz-border-radius:50%;
+					background:@logo-red-rgb;
+					color:@background-content;
+					font-size:1.75em;
+					text-align:center;
+					font-style:italic;
+					position:absolute;
+					font-weight:400;
+					top:50%;
+					left:50%;
+					margin-top:-3em;
+					margin-left:-2em;
+				}
+				& h2 { padding-bottom:0!important; }
+			}
+		}
 	}
+}
+.button{
+	font-family:@font-body;
+	&.button--cooked{
+		line-height:1.1em;
+		margin-left:0
+	}
+}
+button {
+	&.serving--counter--arrow{
+		height: 3.5em;
+		line-height:1em;
+		margin:0;
+	}
+}
+.section--recipe {
+	& .recipe--intro--tags{ 
+		& .recipe--intro--cooked{
+			& button{ float:left; }
+		}
+	}
+}
+.servings--and--metric{
+	& .servings--div{
+		margin-bottom:2em;
+		& .servings--div__label {
+			line-height:3em;
+			font-size: 1.5em;
+			display: inline-block;
+			vertical-align: top;
+		}
+		& .serving__counter__input{
+			text-align:center;
+			border:0.1em solid #f3f3f3;
+			height:3.5em;
+		}
+	}
+	& .metric--div{
+		margin-bottom:2em;
+		& button{
+			margin-left:0;
+			&.is--active{
+				background: @logo-red-rgb;
+				border: 0.1em solid @logo-red-rgb;
+				color: #fff;
+			}
+		}
+	}
+
 }

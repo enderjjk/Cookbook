@@ -1,37 +1,37 @@
 /* Landscape phones and down */
-@media (max-width: 767px) { 
-	.user-area {
+@media (max-width: 1179px) { 
+	.details--block--user-area {
 		position:relative;
 		text-align:center;
 	}
-	.user-area .user-img img{ 
+	.details--block--user-area .details--block__image{ 
 		position:absolute;
-		height:40px;
-		width:40px;
-		border-radius:20px;
-		-moz-border-radius:20px;
-		margin-left:-20px;
+		height:4em;
+		width:4em;
+		border-radius:2em;
+		-moz-border-radius:2em;
+		margin-left:-2em;
 		left:50%;
 	}
-	.user-area h5 { margin:0.5em 0 1em 0; }
-	.recipe-of-a-day .details{
-		top:40px;
+	.details--block--user-area h5 { margin:0.5em 0 1em 0; }
+	.section--main--image .section--main--image__image .section--main--image__image--relative .section--main--image--details-block{
+		top:7em;
 		left:50%;
-		margin-left:-140px;
+		margin-left:-14em;
 		position: absolute;
-		width:280px;
-		height:300px;
+		width:28em;
+		height:30em;
 		padding:3.25em 3em;
 		background:#f7f7f7;
 	}
-	.recipe-of-a-day .details .label{
+	.section--main--image .section--main--image__image .section--main--image__image--relative .section--main--image--details-block .details-block__label{
 		font-family:@font-family-headers-medium;
-		width:50px;
-		height:30px;
-		line-height:15px;
-		padding:15px 5px;
-		border-radius:30px;
-		-moz-border-radius:30px;
+		width:5em;
+		height:3em;
+		line-height:1.5em;
+		padding:1.5em 0.5em;
+		border-radius:50%;
+		-moz-border-radius:50%;
 		background:@logo-red-rgb;
 		color:#f7f7f7;
 		font-size:1em;
@@ -40,19 +40,55 @@
 		position:absolute;
 		font-weight:400;
 		top:0;
-		margin-top:-30px;
+		margin-top:-3em;
 		left:50%;
-		margin-left:-30px;
+		margin-left:-3em;
 	}
-	.recipe-of-a-day .details h3{
+	.section--main--image .section--main--image__image .section--main--image__image--relative .section--main--image--details-block h3{
 		text-align:center;
 		font-size:3em;
 		color:#484848;
 		padding-bottom:0.5em;
 	}
-	.recipe-of-a-day .details p{
+	.overlay .menu-mobile .navigation-mobile a{ height:2em; line-height:2em; }
+	.section--main--image .section--main--image__image .section--main--image__image--relative .section--main--image--details-block p{
 		text-align:center;
 		font-size:1.4em;
 		line-height:1.4em;
+		padding-bottom:0.5em;
 	}
+	.section--recipe .section--advertisment{
+		margin:1.5em 0;
+	}
+	.section--recipe .section--advertisment img{
+		margin:0;
+		left:0;
+	}
+	.details--block--user-area__image{
+		position:relative;
+		height:4em;
+	}
+	.details--block--user-area__image img{
+		top:0;
+	}
+	button, .details--action--group a { margin-left:0; }
+	.section--recipe .section--recipe--details .section--recipe--details__items { margin-left:0; margin-right:1em; }
+	.section--recipe .recipe--intro--tags .recipe--tags__items,
+	.section--recipe .recipe--intro--tags .recipe--intro--cooked,
+	.section--recipe .recipe--intro--tags .recipe--intro--ratings{
+		margin-bottom:1.5em; 
+	}
+	.or{ margin:0; }
+
+	.recipe--intro--ratings__items::after{ left:0; }
+	.section--advertisment{
+		margin:3em 0;
+	}
+	.section--advertisment img{
+			position:relative;
+			left:0;
+			margin-left:0;
+	}
+	.items--list__item--details h2{ text-align:center; }
+	
 }
