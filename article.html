@@ -130,16 +130,10 @@
 		                <div class="grid-100 mobile-grid-100">
 		                	<div class="grid-50 mobile-grid-100 grid-parent section--recipe--top">
 								<div class="grid-40 mobile-grid-100 details--block--user-area">
-		                            <div class="grid-30 mobile-grid-100 details--block--user-area__image">
-										<a href="user.html">
-											<img src="images/person.jpg" class="details--block__image">
-										</a>
-		                            </div>
-									<div class="grid-70 mobile-grid-100">
-										<a href="user.html">
-											<h5 class="details--block__name">USER NAME</h5>
-										</a>
-									</div>
+		                            <a href="user.html">
+										<img src="images/person.jpg" class="details--block__image">
+										<h5 class="details--block__name">USER NAME</h5>
+									</a>
 								</div>
 								<div class="grid-60 mobile-grid-100 grid-parent section--recipe--details">
 									<div class="section--recipe--details__items cooking-time">
@@ -164,8 +158,8 @@
 								</ul>
 							</div>
 		                    <div class="grid-25 mobile-grid-100 grid-parent details--action--group">
-								<button id="bookmark" class="bookmark mobile-grid-100 details--action--group__share-button icon is-open"><i class="fa fa-bookmark-o" aria-hidden="true"></i> &nbsp;&nbsp;Bookmark Recipe</button>
-								<button class="print details--action--group__share-button icon hide-on-mobile" title="Print this recipe"><i class="fa fa-print" aria-hidden="true"></i></button>
+								<button id="bookmark" class="button bookmark mobile-grid-100 details--action--group__share-button icon is-open"><i class="fa fa-bookmark-o" aria-hidden="true"></i> &nbsp;&nbsp;Bookmark Recipe</button>
+								<button id="print" class="button print details--action--group__share-button icon hide-on-mobile" title="Print this recipe"><i class="fa fa-print" aria-hidden="true"></i></button>
 							</div>
 		                </div>
 	                    <div class="grid-100 mobile-grid-100 grid-parent section--recipe--intro">
@@ -189,7 +183,7 @@
 									</p>
 								</div>
 								<div class="grid-25 mobile-grid-100 grid-parent recipe--intro--cooked">
-									<button id="recipe--was--cooked button button--cooked">
+									<button id="recipe--was--cooked" class="button button--cooked">
 										<i class="fa fa-check-circle" aria-hidden="true"></i> Mark as <strong>Cooked</strong>
 									</button>
 								</div>
@@ -235,14 +229,14 @@
 										<div class="grid-50 mobile-grid-50 servings--div__label">Servings</div>
 										<div class="grid-50 mobile-grid-50 grid-parent servings--div__counter">
 											<div data-role="controlgroup" data-type="horizontal" data-mini="true">
-												<button id="plus" class="grid-30 mobile-grid-30 grid-parent serving--counter--arrow" data-inline="true">+</button>
+												<button id="minus" class="button grid-30 mobile-grid-30 grid-parent serving--counter--arrow" data-inline="true" disabled="disabled"><i class="fa fa-minus" aria-hidden="true"></i></button>
 												<input id="serving__counter__input" type="text" class="grid-40 mobile-grid-40 serving__counter__input" value="1" disabled="disabled" />
-												<button id="minus" class="grid-30 mobile-grid-30 grid-parent serving--counter--arrow" data-inline="true">-</button>
+												<button id="plus" class="button grid-30 mobile-grid-30 grid-parent serving--counter--arrow" data-inline="true"><i class="fa fa-plus" aria-hidden="true"></i></button>
 											</div>
 										</div>
 									</div>
 									<div id="metric--button" class="grid-60 push-20 mobile-grid-100 grid-parent metric--div">
-										<button class="grid-50 mobile-grid-50 grid-parent is--active">US</button><button class="grid-50 mobile-grid-50 grid-parent">Metric</button>
+										<button class="button grid-50 mobile-grid-50 grid-parent is--active">US</button><button class="button grid-50 mobile-grid-50 grid-parent">Metric</button>
 									</div>
 								</div>
 								<ul class="grid-100 mobile-grid-100 grid-parent recipe--ingredients">
@@ -268,7 +262,42 @@
 						</div>
 					</div>
              	</div>
-            </div>
+            </section>
+			<section class="grid-100 mobile-grid-100 comments">
+				<div class="grid-100 mobile-grid-100">
+					<div class="grid-100 mobile-grid-100 comment">
+						<h3>Your Comments</h3>
+						<div class="grid-100 mobile-grid-100 grid-parent comment--div">
+							<div class="grid-100 mobile-grid-100 grid-parent comment--div__textarea">
+								<textarea class="grid-100 mobile-grid-100"></textarea>
+							</div>
+							<div class="grid-100 mobile-grid-100 grid-parent comment--div__textarea__text">
+								<p class="grid-100 mobile-grid-100 grid-parent"><a href="#">Sign in</a> or <a href="#">register</a> to comment</p>
+							</div>
+						</div>
+						<div class="grid-100 mobile-grid-100 grid-parent comments--list">
+							<div class="grid-100 mobile-grid-100 grid-parent comments--list__item">
+								<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+									<a href="user.html">
+										<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area__image">
+											<img src="images/person.jpg" class="details--block__image">
+											<h5 class="details--block__name">USER NAME</h5>
+										</div>
+									</a>
+								</div>
+								<div class="grid-100 mobile-grid-100 grid-parent item--comment">
+									<p>Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dol amet</p>
+								</div>
+								<div class="grid-100 mobile-grid-100 grid-parent item--likes-and-reply">
+									<span class="item__likes"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+									<span class="item__likes count"> 24</span>
+									<span class="item__reply"><button class="button--reply">Reply</button></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
         </div>
     </article>
     <footer class="grid-100 mobile-grid-100">

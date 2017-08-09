@@ -80,10 +80,14 @@ $(function(){
 	}).on('click', '#plus', function () {
 		var value = $('#serving__counter__input').val();
 		value++;
+		$('#minus').removeAttr('disabled')
 		$('#serving__counter__input').val(value);
 	}).on('click', '#minus', function () {
 		var value = $('#serving__counter__input').val();
 		value--;
 		$('#serving__counter__input').val(value);
+		if (value == 1){	
+			$(this).attr('disabled', 'disabled');
+		}
 	});
 });
