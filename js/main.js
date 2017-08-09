@@ -77,12 +77,12 @@ $(function(){
 		$('#metric--button button').removeClass('is--active');
 		$(this).addClass('is--active');
 		
-	}).on('click', '#plus', function () {
+	}).on('click', '#servings--plus', function () {
 		var value = $('#serving__counter__input').val();
 		value++;
-		$('#minus').removeAttr('disabled')
+		$('#servings--minus').removeAttr('disabled')
 		$('#serving__counter__input').val(value);
-	}).on('click', '#minus', function () {
+	}).on('click', '#servings--minus', function () {
 		var value = $('#serving__counter__input').val();
 		value--;
 		$('#serving__counter__input').val(value);

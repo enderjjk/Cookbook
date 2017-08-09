@@ -24,15 +24,19 @@
 	<meta name="twitter:image:src" content=""/>
 	<link rel="shortcut icon" href=""/>
 	<link rel="stylesheet/less" type="text/css" href="css/main.less" media="screen" />
-
+	<script src="js/less.min.js"></script>
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 	<script src="js/jquery-3.0.0.min.js"></script>
 	<script src="js/jquery-migrate-3.0.0.js"></script>
+	<script src="js/waypoints.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/modernizr.custom.js"></script>	
-	<script src="js/less.min.js"></script>
+	
 </head> 
 <body>
 	<header class="grid-100 mobile-grid-100 grid-parent header">
@@ -115,34 +119,191 @@
             </div>
         </div>
     </section>
-    <section id="recipe-of-a-day" class="grid-100 mobile-grid-100 grid-parent section--main--image">
-    	<div class="grid-100 mobile-grid-100 grid-parent section--main--image__image">
-			<div class="grid-100 mobile-grid-100 section--main--image__image--relative grid-container">
-				<div class="grid-100 mobile-grid-100 grid-parent section--main--image--details-block">
-					<div class="details-block__label">RECIPE OF A DAY</div>
-					<h3><a href="recipe.html" title="recipe name">Ipsum lorem with ipsum lorem</a></h3>
-					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli. Neque porro quisquam est qui dolorem ipsum quia.</p>
-					<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
-						<a href="user.html" title="user name">
-							<img src="images/person.jpg" title="user name" alt="user name" class="details--block__image">
-							<h5 class="details--block__name">USER NAME</h5>
-						</a>
+	<article class="grid-100 mobile-grid-100 article--main">
+		<div class="grid-container">
+			<div class="grid-100 mobile-grid-100">
+				<section class="grid-100 mobile-grid-100 grid-parent section--recipe">
+					<div class="grid-100 mobile-grid-100 grid-parent section--recipe--inside">
+						<div class="grid-100 mobile-grid-100">
+							<div class="grid-100 mobile-grid-100">
+								<h2>Ipsum lorem this is a article title</h2>
+							</div>
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-50 mobile-grid-100 grid-parent section--recipe--top">
+									<div class="grid-40 mobile-grid-100 details--block--user-area">
+										<a href="user.html" title="user name">
+											<img src="images/person.jpg" class="details--block__image">
+											<h5 class="details--block__name">USER NAME</h5>
+										</a>
+									</div>
+									<div class="grid-60 mobile-grid-100 grid-parent section--recipe--details">
+										<div class="section--recipe--details__items cooking-time">
+											<h4>2h</h4>
+										</div>
+										<div class="section--recipe--details__items prep-time">
+											<h4>1h</h4>
+										</div>
+										<div class="section--recipe--details__items spice-range low">
+											<h4>Medium</h4>
+										</div>
+									</div>
+								</div>
+								<div class="grid-25 mobile-grid-100 grid-parent social">
+									<ul class="grid-100 mobile-grid-100 grid-parent social--list">
+										<li class="social--list__item social--list__item--label">Share: </li>
+										<li class="social--list__item"><a href="#" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+										<li class="social--list__item"><a href="#" title="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+										<li class="social--list__item"><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li class="social--list__item"><a href="#" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li class="social--list__item"><a href="#" title="Mail"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+								<div class="grid-25 mobile-grid-100 grid-parent details--action--group">
+									<button id="bookmark--recipe" type="button" name="bookmark--recipe" class="button bookmark mobile-grid-100 details--action--group__share-button icon is-open"><i class="fa fa-bookmark-o" aria-hidden="true"></i> &nbsp;&nbsp;Bookmark Recipe</button>
+									<button id="print--recipe" type="button" name="print--recipe" class="button print details--action--group__share-button icon hide-on-mobile" title="Print this recipe"><i class="fa fa-print" aria-hidden="true"></i></button>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 grid-parent section--recipe--intro">
+								<div class="grid-40 mobile-grid-100">
+									<p>This lentil salad looks and tastes bright, thanks to a combination of tangerine juice, sherry vinegar and colorful caramelized roasted root vegetables. It works either as a main course, served with good bread and butter, or as side dish with roasted meat or fish. For the maximum visual impact, use both golden and red beets. Vegetarians can feel free to leave out the bacon. Leftovers will keep for at least five days, though try to pack it up without the radicchio, which gets soggy in the fridge.</p>
+								</div>
+								<div class="grid-60 mobile-grid-100">
+									<img src="images/background.jpg" class="grid-100 mobile-grid-100 grid-parent" alt="Image" />
+								</div>
+							</div> 
+						</div>
+						<div class="grid-100 mobile-grid-100">
+							<div class="grid-100 mobile-grid-100">
+								<div class="grid-100 mobile-grid-100 grid-parent recipe--intro--tags">
+									<div class="grid-50 mobile-grid-100 grid-parent recipe--tags__items">
+										<p>
+											<a href="#" title="Tag 1">Tag 1</a>
+											<a href="#" title="Tag 2">Tag 2</a>
+											<a href="#" title="Tag 3">Tag 3</a>
+											<a href="#" title="Tag 4">Tag 4</a>
+										</p>
+									</div>
+									<div class="grid-25 mobile-grid-100 grid-parent recipe--intro--cooked">
+										<button id="recipe--was--cooked" class="button button--cooked">
+											<i class="fa fa-check-circle" aria-hidden="true"></i> Mark as <strong>Cooked</strong>
+										</button>
+									</div>
+									<div class="grid-25 mobile-grid-100 grid-parent recipe--intro--ratings">
+										<div id="recipe--intro--ratings__items" class="grid-50 mobile-grid-100 grid-parent recipe--intro--ratings__items ratings rating-5" data-rating="rating-5" alt="Click to vote or adjust vote" title="Click to vote or adjust vote">
+											<span>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid-100 mobile-grid-100 section--advertisment hide-on-mobile">
+							<img src="images/advert/example.jpg" alt="Advert" title="Advert" />
+						</div>
+						<div class="grid-100 mobile-grid-100 section--advertisment hide-on-desktop">
+							<img class="grid-100 mobile-grid-100" src="images/advert/example.jpg" alt="Advert" title="Advert" />
+						</div>
+						<div class="grid-100 mobile-grid-100 recipe--instructions">
+							<div class="grid-30 mobile-grid-100">
+								<div class="recipe--ingredients--wrap">
+									<h3>Ingredients</h3>
+									<div class="grid-100 mobile-grid-100 grid-parent servings--and--metric">
+										<div class="grid-100 mobile-grid-100 grid-parent servings--div">
+											<div class="grid-50 mobile-grid-50 servings--div__label">Servings</div>
+											<div class="grid-50 mobile-grid-50 grid-parent servings--div__counter">
+												<div data-role="controlgroup" data-type="horizontal" data-mini="true">
+													<button id="servings--minus" type="button" name="servings--minus" class="button grid-30 mobile-grid-30 grid-parent serving--counter--arrow" data-inline="true" disabled="disabled"><i class="fa fa-minus" aria-hidden="true"></i></button>
+													<input id="serving__counter__input" type="text" class="grid-40 mobile-grid-40 serving__counter__input" value="1" disabled="disabled" />
+													<button id="servings--plus" type="button" name="servings--plus" class="button grid-30 mobile-grid-30 grid-parent serving--counter--arrow" data-inline="true"><i class="fa fa-plus" aria-hidden="true"></i></button>
+												</div>
+											</div>
+										</div>
+										<div id="metric--button" class="grid-60 push-20 mobile-grid-100 grid-parent metric--div">
+											<button type="button" name="us--system" class="button grid-50 mobile-grid-50 grid-parent is--active">US</button><button type="button" name="metric--system" class="button grid-50 mobile-grid-50 grid-parent">Metric</button>
+										</div>
+									</div>
+									<ul class="grid-100 mobile-grid-100 grid-parent recipe--ingredients">
+										<li class="grid-100 mobile-grid-100 grid-parent recipe-ingredients__add-all-item recipe-ingredients__item">
+											<span class="grid-90 mobile-grid-90 recipe-ingredients__add-all">Add all ingredients to shopping list</span>
+											<span class="grid-10 mobile-grid-10 grid-parent recipe-ingredients__add recipe-ingredients__add-all-button"><button class="button--simple"><i class="fa fa-plus-circle" aria-hidden="true"></i></button></span>
+										</li>
+										<li class="grid-100 mobile-grid-100 grid-parent recipe-ingredients__item">
+											<span class="grid-20 mobile-grid-20 recipe-ingredients__quantity">1</span>
+											<span class="grid-70 mobile-grid-70 recipe-ingredients__name">Item 1</span>
+											<span class="grid-10 mobile-grid-10 grid-parent recipe-ingredients__add"><button class="button--simple"><i class="fa fa-plus-circle" aria-hidden="true"></i></button></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="grid-70 mobile-grid-100 recipe--steps--wrap">
+								<h3>Preparation</h3>
+								<ol class="recipe-steps">
+									<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+									<li>Add the tomatoes, carrots and celery, cover loosely, and simmer until the vegetables are soft, about 25 minutes longer. While soup simmers, mix the chopped rosemary, grated Parmesan, lemon zest and pepper in a small bowl.</li>
+									<li>Season the soup to taste and ladle into bowls. Sprinkle with the Parmesan mixture.</li>
+								</ol>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="social">
-					<ul class="social--list">
-						<li class="social--list__item social--list__item--label">Share: </li>
-						<li class="social--list__item"><a href="#" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-						<li class="social--list__item"><a href="#" title="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-						<li class="social--list__item"><a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li class="social--list__item"><a href="#" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-						<li class="social--list__item"><a href="#" title="Mail"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
+				</section>
+				<section class="grid-100 mobile-grid-100 comments">
+					<div class="grid-100 mobile-grid-100">
+						<div class="grid-100 mobile-grid-100 comment">
+							<h3>Your Comments</h3>
+							<div class="grid-100 mobile-grid-100 grid-parent comment--div">
+								<div class="grid-100 mobile-grid-100 grid-parent comment--div__textarea">
+									<textarea class="grid-100 mobile-grid-100"></textarea>
+								</div>
+								<div class="grid-100 mobile-grid-100 grid-parent comment--div__textarea__text">
+									<p class="grid-100 mobile-grid-100 grid-parent"><a href="#" title="Sign in">Sign in</a> or <a href="#" title="Register">register</a> to comment</p>
+								</div>
+							</div>
+							<div class="grid-100 mobile-grid-100 grid-parent comments--list">
+								<div class="grid-100 mobile-grid-100 grid-parent comments--list__item">
+									<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area">
+										<a href="user.html" title="user name">
+											<div class="grid-100 mobile-grid-100 grid-parent details--block--user-area__image">
+												<img src="images/person.jpg" class="details--block__image">
+												<h5 class="details--block__name">USER NAME</h5>
+											</div>
+										</a>
+									</div>
+									<div class="grid-100 mobile-grid-100 grid-parent item--comment">
+										<p>Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dol amet</p>
+									</div>
+									<div class="grid-100 mobile-grid-100 grid-parent item--likes-and-reply">
+										<span class="item__likes"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+										<span class="item__likes count"> 24</span>
+										<span class="item__reply"><button type="button" name="reply" class="button--reply">Reply</button></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
-        </div>
-    </section>
-    <section class="grid-container">
+		</div>
+	</article>
+	</section>
+	<section class="grid-container">
     	<div class="grid-100 mobile-grid-100 grid-parent main-content">
 			<div id="section--explore--cookbook" class="grid-100 mobile-grid-100 grid-parent section--items--list section--explore--cookbook">
 				<h2 class="grid-100 mobile-grid-100">Explore Cookbook</h2>

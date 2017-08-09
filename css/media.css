@@ -13,6 +13,11 @@
 		margin-left:-2em;
 		left:50%;
 	}
+	.details--block--user-area .details--block__name{
+		text-align:center;
+		margin:4em 0 0 0;
+		width:100%;
+	}
 	.details--block--user-area h5 { margin:0.5em 0 1em 0; }
 	.section--main--image .section--main--image__image .section--main--image__image--relative .section--main--image--details-block{
 		top:7em;

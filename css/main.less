@@ -68,8 +68,9 @@ h1, h2, h3, h4{
 	padding-bottom:0.75em;
 }
 h1 { font-size:4em; padding-bottom:1em;  }
-h2 { font-size:4em; }
-h3 { font-size:4em; padding-bottom:1em;  }
+h2 { font-size:3em; }
+h3 { font-size:2.5em; padding-bottom:1em;  }
+h4 { font-size:2em; padding-bottom:1em;  }
 .grid-container{ max-width:1200px; }
 
 
@@ -475,7 +476,7 @@ input{
 				width: 100%;
 				& .item--details__cover{ background-size:contain; overflow:hidden; } 
 			}
-			& h2{
+			& h2, & h3, & h4{
 				font-size:2em;
 				color:@borders;
 				text-decoration:none;
@@ -551,6 +552,14 @@ input{
 	}
 }
 .section--items--list{
+	& h2 {
+		& span{
+			text-transform:uppercase;
+			margin-right:0.5em;
+			padding-right:0.5em;
+			border-right:0.1em solid lighten(@borders,40%);
+		}
+	}
 	& .view--more{
 		margin-bottom:2em;
 		text-align:center;
@@ -998,7 +1007,7 @@ footer{
 					margin-top:-3em;
 					margin-left:-2em;
 				}
-				& h2 { padding-bottom:0!important; }
+				& h3 { padding-bottom:0!important; }
 			}
 		}
 	}
@@ -1063,6 +1072,7 @@ button {
 
 .comments { 
 	background-color:@background-content;
+	margin-bottom:2em;
 	& .comment{
 		padding:2em 0;
 		margin:2em 0;
