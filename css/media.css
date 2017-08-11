@@ -96,5 +96,6 @@
 	}
 	.items--list__item--details h2{ text-align:center; }
 	.section--user--intro--image__image{ margin-left:25%; }
+	.list--background .list--background--item .details--block--user-area .details--block__name{ margin:2.5em 0 0 0; }
 	
 }
