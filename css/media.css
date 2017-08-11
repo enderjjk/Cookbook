@@ -1,5 +1,5 @@
 /* Landscape phones and down */
-@media (max-width: 1179px) { 
+@media (max-width: 769px) { 
 	.details--block--user-area {
 		position:relative;
 		text-align:center;
@@ -95,5 +95,6 @@
 			margin-left:0;
 	}
 	.items--list__item--details h2{ text-align:center; }
+	.section--user--intro--image__image{ margin-left:25%; }
 	
 }
