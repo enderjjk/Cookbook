@@ -1,5 +1,14 @@
 /* Landscape phones and down */
-@media (max-width: 769px) { 
+@media (min-width: 768px) and (max-width: 1180px) { 
+	.bookmark span{
+		display:none;
+	}
+	.metric--div button{
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) { 
 	.details--block--user-area {
 		position:relative;
 		text-align:center;
