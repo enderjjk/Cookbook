@@ -3,9 +3,6 @@
 	.bookmark span{
 		display:none;
 	}
-	.metric--div button{
-		padding: 0;
-	}
 }
 
 @media (max-width: 768px) { 
